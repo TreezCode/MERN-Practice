@@ -1,0 +1,21 @@
+{
+  "name": "mern-practice",
+  "version": "1.0.0",
+  "description": "Goalsetter app for MERN refresher",
+  "main": "\u001b[D\u001b[server.js)\u001b[D\u001b[D\u001b[D\u001b[Dindex\u001b[\u001b[C\u001b[C\u001b[Cx.js) server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "author": "Joey Kubalak",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
