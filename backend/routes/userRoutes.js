@@ -6,7 +6,7 @@ const {
     getMe
 } = require('../controllers/userController')
 const {
-    protect
+    protect 
 } = require('../middleware/authMiddleware')
 
 router.post('/', registerUser)
