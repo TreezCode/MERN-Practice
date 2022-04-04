@@ -119,6 +119,7 @@ a {
   cursor: pointer;
   transition: 0.5s;
   box-shadow: 0 0 20px #62478550;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Create toggle ball */

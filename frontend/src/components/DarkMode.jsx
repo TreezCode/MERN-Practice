@@ -31,7 +31,7 @@ const toggleTheme = (e) => {
 function DarkMode() {
   return (
     <section className="dark-mode">
-      <span>☀️</span>
+      <span>☀️ </span>
       <input
         type="checkbox"
         name="switch"
@@ -40,7 +40,7 @@ function DarkMode() {
         defaultChecked={defaultDark}
       />
       <label htmlFor="switch"></label>
-      <span>🌘</span>
+      <span> 🌘</span>
     </section>
   )
 }
