@@ -3,7 +3,7 @@
 MERN Stack REST api goals app for practice.
 
 ## Demo 🧐
-[MERN Goal Tracker](https://mernapptreez.herokuapp.com/).
+[MERN Goal Tracker](https://mernapptreez.herokuapp.com/)
 
 ## Creator ✋
 **Joey Kubalak**

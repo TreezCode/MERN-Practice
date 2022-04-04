@@ -150,4 +150,5 @@ a {
 /* Emoji Size */
 .dark-mode span {
   font-size: 2rem;
+  padding: 0 4px;
 }
