@@ -1,0 +1,152 @@
+:root {
+  --font: #000;
+  --link: #000;
+  --background: #fff;
+  --header-hover: #777;
+  --header-borderbottom: #e6e6e6;
+  --heading-paragraph: #828282;
+  --textarea-border: #e6e6e6;
+  --textarea-background: #e6e6e6;
+  --card-background: #bebebe;
+  --btn-border: #000;
+  --btn-background: #000;
+  --btn-font: #fff;
+  --btn-background-reverse: #fff;
+  --btn-font-reverse: #000;
+  --spinner-background: rgba(0, 0, 0, 0.5);
+  --spinner: #000 transparent #555 transparent;
+}
+
+[data-theme='dark'] {
+  --font: #fff;
+  --link: #fff;
+  --background: #121212;
+  --header-hover: #909090;
+  --header-borderbottom: #2e2e2e;
+  --heading-paragraph: #858585;
+  --textarea-border: #2e2e2e;
+  --textarea-background: #fffbfb;
+  --card-background: #383838;
+  --btn-border: #121212;
+  --btn-background: #000;
+  --btn-font: #fff;
+  --btn-background-reverse: #fff;
+  --btn-font-reverse: #000;
+  --spinner-background: rgba(0, 0, 0, 0.5);
+  --spinner: #000 transparent #555 transparent;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--font);
+  transition: 0.5s;
+}
+
+a {
+  transition: 0.5s;
+  color: var(--link);
+}
+
+.header {
+  border-bottom-color: var(--header-borderbottom);
+}
+
+.header ul li a:hover {
+  color: var(--header-hover);
+}
+
+.heading p {
+  color: var(--heading-paragraph);
+}
+
+.goal {
+  background-color: var(--card-background);
+}
+
+.form-group input {
+  background-color: var(--textarea-background);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  border-color: var(--textarea-border);
+}
+
+.btn {
+  border-color: var(--btn-border);
+  background: var(--btn-background);
+  color: var(--btn-font);
+}
+
+.btn-reverse {
+  background: var(--btn-background-reverse);
+  color: var(--btn-font-reverse);
+}
+
+.loadingSpinnerContainer {
+  background-color: var(--spinner-background);
+}
+
+.loadingSpinner {
+  border-color: var(--spinner);
+}
+
+.dark-mode {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+/* Hide toggle input */
+.dark-mode input[type='checkbox'] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+/* Style toggle body */
+.dark-mode label {
+  display: block;
+  width: 90px;
+  height: 40px;
+  background-color: #6e5096;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #62478550;
+}
+
+/* Create toggle ball */
+.dark-mode label::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #e8f5f7;
+  position: absolute;
+  border-radius: 70px;
+  top: 5px;
+  left: 5px;
+  transition: 0.5s;
+}
+
+/* Add sliding animation */
+.dark-mode input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translate(-100%);
+}
+.dark-mode input:checked + label {
+  background-color: #2f233f;
+}
+.dark-mode label:active:after {
+  width: 42px;
+}
+
+/* Emoji Size */
+.dark-mode span {
+  font-size: 2rem;
+}

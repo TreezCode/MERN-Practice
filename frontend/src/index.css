@@ -13,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  /* color: #000; */
 }
 
 p {
@@ -48,7 +48,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid;
   margin-bottom: 60px;
 }
 
@@ -67,9 +67,9 @@ h3 {
   align-items: center;
 }
 
-.header ul li a:hover {
+/* .header ul li a:hover {
   color: #777;
-}
+} */
 
 .header ul li a svg {
   margin-right: 5px;
@@ -93,7 +93,8 @@ h3 {
 }
 
 .goal {
-  background-color: #f4f4f4;
+  display: grid;
+  /* background-color: #c0c0c0; */
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
@@ -123,7 +124,7 @@ h3 {
 .form-group select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid;
   border-radius: 5px;
   margin-bottom: 10px;
   font-family: inherit;
@@ -137,10 +138,10 @@ h3 {
 
 .btn {
   padding: 10px 20px;
-  border: 1px solid #000;
+  border: 1px solid;
   border-radius: 5px;
-  background: #000;
-  color: #fff;
+  /* background: #000; */
+  /* color: #fff; */
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
@@ -155,10 +156,10 @@ h3 {
   margin-right: 8px;
 }
 
-.btn-reverse {
-  background: #fff;
-  color: #000;
-}
+/* .btn-reverse {
+  background: #fff; 
+  color: #000; 
+} */
 
 .btn-block {
   width: 100%;
@@ -175,7 +176,7 @@ h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   z-index: 5000;
   display: flex;
   justify-content: center;
@@ -186,7 +187,7 @@ h3 {
   width: 64px;
   height: 64px;
   border: 8px solid;
-  border-color: #000 transparent #555 transparent;
+  /* border-color: #000 transparent #555 transparent; */
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }
