@@ -17,7 +17,6 @@ function Dashboard() {
 
   useEffect(() => {
     if (isError) {
-      console.log(user)
       console.log(message)
     }
 
@@ -30,7 +29,7 @@ function Dashboard() {
     return () => {
       dispatch(reset())
     }
-  }, [user, navigate, isError, message, dispatch])
+  }, [user, isError, message, navigate, dispatch])
 
   if (isLoading) {
     return <Spinner />
