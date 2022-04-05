@@ -12,7 +12,7 @@ const setLight = () => {
 // Check the users theme preference
 const storedTheme = localStorage.getItem('theme')
 const prefersDark =
-  window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+  window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 const defaultDark =
   storedTheme === 'dark' || (storedTheme === null && prefersDark)
 if (defaultDark) {
@@ -29,16 +29,16 @@ const toggleTheme = (e) => {
 
 function DarkMode() {
   return (
-    <section className="dark-mode">
+    <section className='dark-mode'>
       <span>☀️</span>
       <input
-        type="checkbox"
-        name="switch"
-        id="switch"
+        type='checkbox'
+        name='switch'
+        id='switch'
         onChange={toggleTheme}
         defaultChecked={defaultDark}
       />
-      <label htmlFor="switch"></label>
+      <label htmlFor='switch'></label>
       <span>🌘</span>
     </section>
   )
