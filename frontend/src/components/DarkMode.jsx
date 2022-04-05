@@ -4,16 +4,15 @@ const setDark = () => {
   localStorage.setItem('theme', 'dark')
   document.documentElement.setAttribute('data-theme', 'dark')
 }
-
 const setLight = () => {
   localStorage.setItem('theme', 'light')
   document.documentElement.setAttribute('data-theme', 'light')
 }
 
-// Check and store user theme preference
+// Check the users theme preference
 const storedTheme = localStorage.getItem('theme')
 const prefersDark =
-  window.matchMedia && window.matchMedia('prefers-color-scheme: dark').matches
+  window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
 const defaultDark =
   storedTheme === 'dark' || (storedTheme === null && prefersDark)
 if (defaultDark) {
