@@ -1,76 +1,77 @@
-const asyncHandler = require('express-async-handler')
-const Goal = require('../models/goalModel')
-const User = require('../models/userModel')
+// external imports
+const asyncHandler = require('express-async-handler');
+// internal imports
+const Goal = require('../models/goalModel');
 
 // @desc    Get goals
 // @route   GET /api/goals
 // @access  Private
 const getGoals = asyncHandler(async (req, res) => {
   // User data from 'protect' middleware
-  const goals = await Goal.find({ user: req.user.id })
-  res.status(200).json(goals)
-})
+  const goals = await Goal.find({ user: req.user.id });
+  res.status(200).json(goals);
+});
 
 // @desc    Set goal
 // @route   POST /api/goals
 // @access  Private
 const setGoal = asyncHandler(async (req, res) => {
   if (!req.body.text) {
-    res.status(400)
-    throw new Error('Please add a text field')
+    res.status(400);
+    throw new Error('Please add a text field');
   }
   const goal = await Goal.create({
     text: req.body.text,
     user: req.user.id,
-  })
-  res.status(200).json(goal)
-})
+  });
+  res.status(200).json(goal);
+});
 
 // @desc    Update goal
 // @route   PUT /api/goals/:id
 // @access  Private
 const updateGoal = asyncHandler(async (req, res) => {
-  const goal = await Goal.findById(req.params.id)
-  validateGoal(goal, req, res)
+  const goal = await Goal.findById(req.params.id);
+  validateGoal(goal, req, res);
   const updatedGoal = await Goal.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
-  })
-  res.status(200).json(updatedGoal)
-})
+  });
+  res.status(200).json(updatedGoal);
+});
 
 // @desc    Delete goal
 // @route   DELETE /api/goals/:id
 // @access  Private
 const deleteGoal = asyncHandler(async (req, res) => {
-  const goal = await Goal.findById(req.params.id)
-  validateGoal(goal, req, res)
-  await goal.remove()
+  const goal = await Goal.findById(req.params.id);
+  validateGoal(goal, req, res);
+  await goal.remove();
   res.status(200).json({
     id: req.params.id,
-  })
-})
+  });
+});
 
 const validateGoal = asyncHandler(async (goal, req, res) => {
   // Check for goal
   if (!goal) {
-    res.status(400)
-    throw new Error('Goal not found')
+    res.status(400);
+    throw new Error('Goal not found');
   }
   // Check for user
   if (!req.user) {
-    res.status(401)
-    throw new Error('User not found')
+    res.status(401);
+    throw new Error('User not found');
   }
   // Make sure logged in user matches goal user
   if (goal.user.toString() !== req.user.id) {
-    res.status(401)
-    throw new Error('User not authorized')
+    res.status(401);
+    throw new Error('User not authorized');
   }
-})
+});
 
 module.exports = {
   getGoals,
   setGoal,
   updateGoal,
   deleteGoal,
-}
+};

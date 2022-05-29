@@ -1,14 +1,16 @@
-const express = require('express')
-const router = express.Router()
+// external imports
+const express = require('express');
+const router = express.Router();
+// intertnal imports
 const {
   getGoals,
   setGoal,
   updateGoal,
   deleteGoal,
-} = require('../controllers/goalController')
-const { protect } = require('../middleware/authMiddleware')
+} = require('../controllers/goalController');
+const { protect } = require('../middleware/authMiddleware');
 
-router.route('/').get(protect, getGoals).post(protect, setGoal)
-router.route('/:id').delete(protect, deleteGoal).put(protect, updateGoal)
+router.route('/').get(protect, getGoals).post(protect, setGoal);
+router.route('/:id').delete(protect, deleteGoal).put(protect, updateGoal);
 
-module.exports = router
+module.exports = router;

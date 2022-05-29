@@ -1,0 +1,44 @@
+20220528	17:07:51	5f8509af-6187-421c-aec1-1b27db96b5fe	Error: Failed to authenticate token
+20220528	17:08:41	b603abfb-6f83-4d98-83e5-cf73e5752f56	Error: Failed to authenticate token
+20220528	17:13:21	4bb8f19c-1413-4907-99e3-a9e736c1a63d	Error: Failed to authenticate token
+20220528	17:31:24	bba767a4-20b4-4583-8d7f-ae3220b9d1e7	Error: Not allowed by CORS
+20220528	17:31:29	0a091cdb-ef0a-4f2e-b072-1f91d5cc24c8	Error: Not allowed by CORS
+20220528	17:31:59	0dd3c124-1966-4889-8421-17af4686b1c5	Error: Not allowed by CORS
+20220528	17:32:02	6f6762ae-58d9-4bae-bdf2-2e8ec9a423c8	Error: Not allowed by CORS
+20220528	17:33:36	93791ece-0c01-4b1e-b70e-2044a2202af8	Error: Not allowed by CORS
+20220528	17:33:38	35ed447a-e004-417f-b599-4d41ca03a876	Error: Not allowed by CORS
+20220528	17:33:41	f343b9b4-e7af-4a48-9010-759978bbb823	Error: Not allowed by CORS
+20220528	17:33:51	0c218173-b072-4d0c-b8be-6ac0847d8b4f	Error: Not allowed by CORS
+20220528	17:34:00	149733c5-c0a1-48c3-8aeb-d10668af9f00	Error: Not allowed by CORS
+20220528	17:34:40	e0b3ea96-02ef-431a-8817-fd1915650393	Error: Not allowed by CORS
+20220528	17:35:01	30e4d34f-9082-46bb-a764-58bae638668f	Error: Failed to authenticate token
+20220528	17:36:16	a28ff53b-fbaa-4a3e-9d05-27a54077af65	Error: Failed to authenticate token
+20220528	17:42:36	5a26877f-ca81-4761-8602-1e34aabfaf96	Error: Failed to authenticate token
+20220528	17:45:13	9f8edbbd-4a46-4d9c-b076-3dea9976269c	Error: Failed to authenticate token
+20220528	17:47:41	0418be0e-4582-461d-a115-50d626b49583	Error: Failed to authenticate token
+20220528	17:47:45	06f995ae-b094-427f-81a3-4b91cf0b1680	Error: Failed to authenticate token
+20220528	17:49:18	2e9abbb1-fd3b-455b-8eef-972e17ef8f64	Error: Please add a text field
+20220528	17:49:25	9c118baf-478f-4d28-b99c-e63472937fca	Error: Please add a text field
+20220528	17:49:55	1a920006-c812-47e7-b164-20b379f9b1b0	Error: Please add a text field
+20220528	17:52:51	0213887f-3e1b-49d4-adef-582328360aa8	Error: Failed to authenticate token
+20220528	17:53:10	c1852f68-de68-4f0b-888f-41ca28c423d6	Error: Failed to authenticate token
+20220528	18:05:04	a4df1d57-c2a4-44db-90cc-321a3b6120ef	Error: Failed to authenticate token
+20220528	18:05:21	bd1ff407-ba82-43c0-8a83-0dd5369716ba	Error: Failed to authenticate token
+20220528	19:13:24	4260f33b-8e90-4156-bb2c-067841f3b0fb	Error: Failed to authenticate token
+20220528	19:13:51	a22c73e6-671c-4f7d-823d-b4261e127e38	Error: Failed to authenticate token
+20220528	19:23:25	8ab32db5-8c99-479f-877e-2e4fad048a1d	Error: Please add a text field
+20220528	19:23:33	10af5782-03c3-4cee-b66b-c44e2995561b	Error: Please add a text field
+20220528	19:38:24	17876985-9153-498b-b633-c4f35e91a15c	Error: Failed to authenticate token
+20220528	19:49:27	2e59b421-ef79-414d-8172-6c204db80164	Error: Failed to authenticate token
+20220528	19:50:12	15b928c2-40ef-4f88-a441-a6c0076a1854	Error: Failed to authenticate token
+20220528	20:04:43	f48910f5-4fa8-458e-ad09-6a4cf4ceedcd	Error: Failed to authenticate token
+20220528	20:06:50	1f4dacb2-744e-4689-ae5c-da78de4dd2d9	Error: Failed to authenticate token
+20220528	20:06:57	c60d861a-493a-48cb-8cf2-8a36d8eb19b9	Error: Failed to authenticate token
+20220528	20:07:01	50ee1a6c-8195-4ac3-a396-6b08d015ebb4	Error: Failed to authenticate token
+20220528	20:07:21	595f7528-49da-46a9-becc-5227f3715528	Error: Please add a text field
+20220528	20:07:29	8ab63598-55b3-4b65-b313-65ac3e95fc1a	Error: Please add a text field
+20220528	20:08:23	aa729fff-c6be-4d77-a456-af5df783a7c3	Error: Failed to authenticate token
+20220528	20:08:38	5e115a64-15fc-49eb-9a4c-5ed930d9d4e9	Error: Please add a text field
+20220528	21:27:11	2b80e805-4422-49f5-a63a-ca7167127598	Error: Failed to authenticate token
+20220528	21:27:16	b582e368-555b-4486-8d0e-8c47282ce5ff	Error: Failed to authenticate token
+20220528	21:30:22	335822a9-2544-4bd9-826d-a8b66455148e	Error: Please add a text field
