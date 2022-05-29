@@ -65,19 +65,12 @@ const loginUser = asyncHandler(async (req, res) => {
     user.refreshToken = refreshToken;
     const updatedUser = await user.save();
     // Create secure cookie with refresh token
-    if (process.env.NODE_ENV === 'production') {
-      res.cookie('jwt', refreshToken, {
-        httpOnly: true,
-        sameSite: 'None',
-        secure: true,
-        maxAge: 24 * 60 * 60 * 1000,
-      });
-    } else {
-      res.cookie('jwt', refreshToken, {
-        httpOnly: true,
-        maxAge: 24 * 60 * 60 * 1000,
-      });
-    }
+    res.cookie('jwt', refreshToken, {
+      httpOnly: true,
+      sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
+      secure: process.env.NODE_ENV === 'production' ? true : false,
+      maxAge: 24 * 60 * 60 * 1000,
+    });
     // Send (roles) and access token back to user
     res.json({
       _id: updatedUser.id,
@@ -91,8 +84,8 @@ const loginUser = asyncHandler(async (req, res) => {
   }
 });
 
-// @desc    Refresh access token with stored refresh token
-// @route   POST /api/users/logout
+// @desc    Logout user by clearing jwt cookie
+// @route   GET /api/users/logout
 // @access  Public
 const logoutUser = asyncHandler(async (req, res) => {
   // -------------------------------------
@@ -100,41 +93,29 @@ const logoutUser = asyncHandler(async (req, res) => {
   // -------------------------------------
   // Check for cookies
   const cookies = req.cookies;
-  console.log(cookies);
   if (!cookies?.jwt) return res.sendStatus(204); // no content
   const refreshToken = cookies.jwt;
   // Check for user refresh token in db
-  const user = await User.findOne({ refreshToken }).exec();
+  const user = await User.findOne({ refreshToken }).select('-password').exec();
   if (!user) {
     // Clear jwt cookie
-    if (process.env.NODE_ENV === 'production') {
-      res.clearCookie('jwt', {
-        httpOnly: true,
-        sameSite: 'None',
-        secure: true,
-      });
-    } else {
-      res.clearCookie('jwt', {
-        httpOnly: true,
-      });
-    }
-    return res.sendStatus(403); // forbidden
+    res.clearCookie('jwt', {
+      httpOnly: true,
+      sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
+      secure: process.env.NODE_ENV === 'production' ? true : false,
+    });
+    return res.sendStatus(204); // no-content
   }
   // Delete refresh token from database
   user.refreshToken = '';
-  await user.save();
+  const result = await user.save();
+  console.log(result);
   // Clear cookie
-  if (process.env.NODE_ENV === 'production') {
-    res.clearCookie('jwt', {
-      httpOnly: true,
-      sameSite: 'None',
-      secure: true,
-    });
-  } else {
-    res.clearCookie('jwt', {
-      httpOnly: true,
-    });
-  }
+  res.clearCookie('jwt', {
+    httpOnly: true,
+    sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
+    secure: process.env.NODE_ENV === 'production' ? true : false,
+  });
   res.sendStatus(204);
 });
 

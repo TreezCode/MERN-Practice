@@ -42,3 +42,5 @@
 20220528	21:27:11	2b80e805-4422-49f5-a63a-ca7167127598	Error: Failed to authenticate token
 20220528	21:27:16	b582e368-555b-4486-8d0e-8c47282ce5ff	Error: Failed to authenticate token
 20220528	21:30:22	335822a9-2544-4bd9-826d-a8b66455148e	Error: Please add a text field
+20220528	23:42:25	d63adba9-2bfa-4b42-b746-c6c0cfd754c5	Error: Failed to authenticate token
+20220528	23:56:45	ae892a8f-924b-4cb4-b264-3aabea4eb72e	TypeError: user.select is not a function

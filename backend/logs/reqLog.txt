@@ -310,3 +310,14 @@
 20220528	21:31:19	568ec8bd-d49e-4ce5-9cd6-9dba048491a6	GET	undefined	/api/users/logout
 20220528	21:31:23	59f750bc-f09e-4383-bed7-aa9fe117dafc	POST	http://localhost:5000/	/api/users/login
 20220528	21:31:23	e18aed24-084f-413c-b78d-1c63c6795ad0	GET	undefined	/api/goals/
+20220528	23:42:25	bbc452d8-144d-4c9b-9562-414f80620f22	GET	undefined	/api/goals/
+20220528	23:44:39	df891198-8689-4b30-9699-90e3e35084d0	GET	undefined	/api/users/logout
+20220528	23:44:48	afaeb850-8e20-41bf-b66e-8153646b1c38	POST	undefined	/api/users/login
+20220528	23:45:48	3d4b4c10-2a89-4952-bc1c-bad2bb7a66dc	POST	http://localhost:5000/	/api/users/login
+20220528	23:45:48	745d0ea5-6900-418d-8950-1c997e791206	GET	undefined	/api/goals/
+20220528	23:45:56	f47ca742-0927-4365-a3ed-848eaa50c315	POST	undefined	/api/users/login
+20220528	23:52:55	d9add184-2d36-474f-a286-6a93eec1f48d	POST	undefined	/api/users/login
+20220528	23:53:02	f53ca966-acaa-4f2b-b197-e5e4790b74a4	GET	undefined	/api/users/logout
+20220528	23:56:45	bfa89b66-65d3-4ef7-8e71-919b65b2aed1	POST	undefined	/api/users/login
+20220528	23:56:58	10d5db08-d5da-4d31-95db-61fd33a60768	POST	undefined	/api/users/login
+20220528	23:58:05	5804ac41-e48c-4bb7-a7b4-13d134c0808c	GET	undefined	/api/users/logout

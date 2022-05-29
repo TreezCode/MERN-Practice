@@ -11,8 +11,8 @@ const handleRefreshToken = (req, res) => {
   const cookies = req.cookies;
   if (!cookies?.jwt) return res.sendStatus(401); // unauthorized
   const refreshToken = cookies.jwt;
-  // Check for user token
-  const user = User.findOne({ refreshToken });
+  // Check for user token in database
+  const user = User.findOne({ refreshToken }).select('-password');
   if (!user) return res.sendStatus(403); // forbidden
   // Verify token
   if (user) {
