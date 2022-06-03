@@ -47,24 +47,25 @@ function Register() {
     e.preventDefault();
     if (password !== password2) {
       toast.error('Passwords do not match');
-    }
-    try {
-      const userData = { username, email, password };
-      const credentials = await register(userData).unwrap();
-      console.log('login data...', credentials);
-      dispatch(setCredentials({ email, ...credentials }));
-      navigate('/');
-    } catch (error) {
-      if (!error?.status) {
-        setErrMsg('No Server Response');
-      } else if (error?.status === 400) {
-        setErrMsg('Invalid email or password');
-      } else if (error?.status === 401) {
-        setErrMsg('Unauthorized');
-      } else {
-        setErrMsg('Login failed...');
+    } else {
+      try {
+        const userData = { username, email, password };
+        const credentials = await register(userData).unwrap();
+        console.log('login data...', credentials);
+        dispatch(setCredentials({ email, ...credentials }));
+        navigate('/');
+      } catch (error) {
+        if (!error?.status) {
+          setErrMsg('No Server Response');
+        } else if (error?.status === 400) {
+          setErrMsg('Invalid email or password');
+        } else if (error?.status === 401) {
+          setErrMsg('Unauthorized');
+        } else {
+          setErrMsg('Login failed...');
+        }
+        // errRef.current.focus();
       }
-      // errRef.current.focus();
     }
   };
 
