@@ -4,28 +4,36 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/userModel');
 
 // @desc    Refresh access token with stored refresh token
-// @route   POST /api/users/refresh
+// @route   GET /api/users/refresh
 // @access  Public
-const handleRefreshToken = (req, res) => {
+const handleRefreshToken = async (req, res) => {
   // Check for cookies
   const cookies = req.cookies;
   if (!cookies?.jwt) return res.sendStatus(401); // unauthorized
   const refreshToken = cookies.jwt;
+  console.log('Refresh Token ==> '.yellow, refreshToken);
   // Check for user token in database
-  const user = User.findOne({ refreshToken }).select('-password');
-  if (!user) return res.sendStatus(403); // forbidden
+  const user = await User.findOne({ refreshToken }).select('-password');
+  const userID = user._id.toString();
+  if (!user) {
+    user.refreshToken = '';
+    await user.save();
+    return res.sendStatus(403); // forbidden
+  }
   // Verify token
   if (user) {
+    console.log('UserID ==>'.yellow, userID);
     jwt.verify(
       refreshToken,
       process.env.REFRESH_TOKEN_SECRET,
       (err, decoded) => {
-        if (err || user.name !== decoded.name) {
-          res.status(403); // forbidden
-          throw new Error('Forbidden refresh token');
+        console.log('Err ==>'.magenta, err);
+        console.log('Decoded ==>'.magenta, decoded);
+        if (err || userID !== decoded.id) {
+          return res.sendStatus(403); // expired or forbidden
         }
         const accessToken = generateAccessToken(decoded.id);
-        res.json({ accessToken });
+        res.json({ accessToken: accessToken, email: user.email });
       }
     );
   } else {
@@ -37,7 +45,7 @@ const handleRefreshToken = (req, res) => {
 // Generate Access Token
 const generateAccessToken = (id) => {
   return jwt.sign({ id }, process.env.ACCESS_TOKEN_SECRET, {
-    expiresIn: '30s',
+    expiresIn: '10s',
   });
 };
 

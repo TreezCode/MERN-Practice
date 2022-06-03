@@ -1,39 +1,65 @@
-import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
-import { Link, useNavigate } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux'
-import { logout, reset } from '../features/auth/authSlice'
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa';
+import { selectCurrentUser, signOut } from '../features/auth/authSlice';
+import { useLogoutMutation } from '../features/auth/authApiSlice';
+import Spinner from './Spinner';
 
 function Header() {
-  const navigate = useNavigate()
-  const dispatch = useDispatch()
-  const { user } = useSelector((state) => state.auth)
-  const onLogout = () => {
-    dispatch(logout())
-    dispatch(reset())
-    navigate('/')
-  }
+  const dispatch = useDispatch();
+  const user = useSelector(selectCurrentUser);
+  const [logout, { isLoading, isError, isSuccess, error }] =
+    useLogoutMutation();
 
-  return (
-    <header className="header">
-      <div className="logo">
-        <Link to="/">GoalTracker</Link>
+  // handle logout
+  const handleLogout = async () => {
+    try {
+      await logout().unwrap();
+      dispatch(signOut());
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  // error effects
+  useEffect(() => {
+    if (isError) {
+      const message = error?.data?.message;
+      !message ? toast.error(error) : toast.error(message);
+    }
+  }, [isError, error]);
+
+  // header content
+  const content = (
+    <header className='header'>
+      <div className='logo'>
+        <Link to='/'>GoalTracker</Link>
       </div>
       <ul>
         {user ? (
-          <li>
-            <button className="btn" onClick={onLogout}>
-              <FaSignOutAlt /> Logout
-            </button>
-          </li>
+          <>
+            <li>
+              <Link to='/user'>
+                <FaSignInAlt /> settings
+              </Link>
+            </li>
+            <li>
+              <button className='btn' onClick={handleLogout}>
+                <FaSignOutAlt /> Logout
+              </button>
+            </li>
+          </>
         ) : (
           <>
             <li>
-              <Link to="/login">
+              <Link to='/login'>
                 <FaSignInAlt /> Login
               </Link>
             </li>
             <li>
-              <Link to="/register">
+              <Link to='/register'>
                 <FaUser /> Register
               </Link>
             </li>
@@ -41,7 +67,9 @@ function Header() {
         )}
       </ul>
     </header>
-  )
+  );
+
+  return isLoading ? <Spinner /> : content 
 }
 
-export default Header
+export default Header;

@@ -94,11 +94,11 @@ h3 {
 }
 
 .goal {
-  display: grid;
   /* background-color: #c0c0c0; */
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
+  border-radius: 5px;
 }
 
 .goal .close {
@@ -108,6 +108,11 @@ h3 {
   cursor: pointer;
   border: none;
   background: none;
+}
+
+.goal .edit {
+  margin: 0 auto;
+  width: 20%;
 }
 
 .form,

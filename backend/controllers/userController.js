@@ -12,9 +12,9 @@ const {
 // @route   POST /api/users
 // @access  Public
 const registerUser = asyncHandler(async (req, res) => {
-  const { name, email, password } = req.body;
+  const { username, email, password } = req.body;
   // Validate input
-  if (!name || !email || !password) {
+  if (!username || !email || !password) {
     res.status(400);
     throw new Error('Please add all fields.');
   }
@@ -29,16 +29,29 @@ const registerUser = asyncHandler(async (req, res) => {
   const hashedPassword = await bcrypt.hash(password, salt);
   // Create user
   const user = await User.create({
-    name,
+    username,
     email,
     password: hashedPassword,
   });
   if (user) {
+    // Save refresh token to user
+    const refreshToken = generateRefreshToken(user.id);
+    user.refreshToken = refreshToken;
+    const updatedUser = await user.save();
+    console.log('User created ==>'.yellow, updatedUser);
+    // Create secure cookie with refresh token
+    res.cookie('jwt', refreshToken, {
+      httpOnly: true,
+      sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
+      secure: process.env.NODE_ENV === 'production' ? true : false,
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+    // Send (roles) and access token back to user
     res.status(201).json({
-      _id: user.id,
-      name: user.name,
-      email: user.email,
-      token: generateAccessToken(user._id),
+      // _id: user.id,
+      // username: user.username,
+      // email: user.email,
+      accessToken: generateAccessToken(user._id),
     });
   } else {
     res.status(400);
@@ -64,6 +77,7 @@ const loginUser = asyncHandler(async (req, res) => {
     const refreshToken = generateRefreshToken(user.id);
     user.refreshToken = refreshToken;
     const updatedUser = await user.save();
+    console.log('User logged in ==>'.yellow, updatedUser);
     // Create secure cookie with refresh token
     res.cookie('jwt', refreshToken, {
       httpOnly: true,
@@ -73,13 +87,13 @@ const loginUser = asyncHandler(async (req, res) => {
     });
     // Send (roles) and access token back to user
     res.json({
-      _id: updatedUser.id,
-      name: updatedUser.name,
-      email: updatedUser.email,
-      token: generateAccessToken(updatedUser._id),
+      // _id: updatedUser.id,
+      // username: updatedUser.username,
+      // email: updatedUser.email,
+      accessToken: generateAccessToken(updatedUser._id),
     });
   } else {
-    res.status(401);
+    res.status(400);
     throw new Error('Invalid credentials');
   }
 });
@@ -88,9 +102,6 @@ const loginUser = asyncHandler(async (req, res) => {
 // @route   GET /api/users/logout
 // @access  Public
 const logoutUser = asyncHandler(async (req, res) => {
-  // -------------------------------------
-  // On client also delete the accessToken
-  // -------------------------------------
   // Check for cookies
   const cookies = req.cookies;
   if (!cookies?.jwt) return res.sendStatus(204); // no content
@@ -109,7 +120,7 @@ const logoutUser = asyncHandler(async (req, res) => {
   // Delete refresh token from database
   user.refreshToken = '';
   const result = await user.save();
-  console.log(result);
+  console.log('User logged out ==>'.yellow, result);
   // Clear cookie
   res.clearCookie('jwt', {
     httpOnly: true,

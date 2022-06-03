@@ -1,53 +1,47 @@
-import { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux'
-import { toast } from 'react-toastify'
-import GoalForm from '../components/GoalForm'
-import GoalItem from '../components/GoalItem'
-import Spinner from '../components/Spinner'
-import { getGoals, reset } from '../features/goals/goalSlice'
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { toast } from 'react-toastify';
+import GoalForm from '../components/GoalForm';
+import GoalItem from '../components/GoalItem';
+import Spinner from '../components/Spinner';
+import { useGetUserQuery } from '../features/auth/authApiSlice';
+import { selectCurrentUser } from '../features/auth/authSlice';
+import { useGetGoalsQuery } from '../features/goals/goalApiSlice';
 
 function Dashboard() {
-  const navigate = useNavigate()
-  const dispatch = useDispatch()
+  const navigate = useNavigate();
+  const user = useSelector(selectCurrentUser);
+  const { data: userData, isLoading } = useGetUserQuery(user);
+  const { data: goalData, isFetching, isError, error } = useGetGoalsQuery(user);
 
-  const { user } = useSelector((state) => state.auth)
-  const { goals, isLoading, isError, message } = useSelector(
-    (state) => state.goals
-  )
-
+  // user effects
   useEffect(() => {
-    dispatch(getGoals())
-  },[dispatch])
+    if (!user) {
+      navigate('/login');
+    }
+  }, [user, navigate]);
 
+  // error effects
   useEffect(() => {
     if (isError) {
-      console.log(message)
-      toast.error(message)
+      const message = error?.data?.message;
+      !message ? toast.error(error) : toast.error(message);
     }
-    if (!user) {
-      navigate('/login')
-    }
-    dispatch(reset())
-  }, [user, isError, message, navigate, dispatch])
+  }, [isError, error]);
 
-  if (isLoading) {
-    return <Spinner />
-  }
-
-  return (
+  // page content
+  const content = (
     <>
-      <section className="heading">
-        <h1>Welcome {user && user.name}</h1>
+      <section className='heading'>
+        <h1>Welcome {userData?.username}</h1>
         <p>Goals Dashboard</p>
       </section>
-
       <GoalForm />
-
-      <section className="content">
-        {goals.length > 0 ? (
-          <div className="goals">
-            {goals.map((goal) => (
+      <section className='content'>
+        {goalData?.length > 0 ? (
+          <div className='goals'>
+            {goalData.map((goal) => (
               <GoalItem key={goal._id} goal={goal} />
             ))}
           </div>
@@ -56,7 +50,10 @@ function Dashboard() {
         )}
       </section>
     </>
-  )
+  );
+
+  // render
+  return isLoading || isFetching ? <Spinner /> : content;
 }
 
-export default Dashboard
+export default Dashboard;
