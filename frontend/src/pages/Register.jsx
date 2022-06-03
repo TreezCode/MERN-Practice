@@ -64,7 +64,7 @@ function Register() {
       } else {
         setErrMsg('Login failed...');
       }
-      errRef.current.focus();
+      // errRef.current.focus();
     }
   };
 

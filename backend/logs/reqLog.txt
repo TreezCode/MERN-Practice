@@ -5406,3 +5406,12 @@
 20220602	20:57:05	989410c6-5f0d-468b-a28d-32b876b23d54	GET	http://localhost:3000	/api/users/logout
 20220602	20:57:06	cc3d19f2-0e7e-498a-bc87-31c684a8df4a	OPTIONS	http://localhost:3000	/api/users/login
 20220602	20:57:06	88613126-b160-4971-ba6c-dbc162063079	POST	http://localhost:3000	/api/users/login
+20220602	21:50:50	f622c7bf-3088-48cb-ad4a-27e2930eff0d	OPTIONS	http://localhost:3000	/api/users/login
+20220602	21:50:50	c856e550-0f97-476b-bc57-bc897b4c7c08	POST	http://localhost:3000	/api/users/login
+20220602	21:50:50	6901bb18-12b4-4caa-bf9d-a06df7f7eb4b	OPTIONS	http://localhost:3000	/api/users/me
+20220602	21:50:50	3b803380-6234-4bfa-bf1a-567f4b7e31cf	OPTIONS	http://localhost:3000	/api/goals
+20220602	21:50:50	20b44116-4565-4779-9a37-234fd45a01e8	GET	http://localhost:3000	/api/users/me
+20220602	21:50:50	85785870-2552-4ceb-9eb8-37d9ea12e81c	GET	http://localhost:3000	/api/goals
+20220602	21:50:54	c22b578f-509d-4cba-a987-4caa05486b48	GET	http://localhost:3000	/api/users/me
+20220602	21:50:55	512ffcc2-51d8-4d22-a387-902ea9582453	OPTIONS	http://localhost:3000	/api/users/logout
+20220602	21:50:55	f7ea01b8-c16b-4b1e-be7b-069a9016cb91	GET	http://localhost:3000	/api/users/logout
