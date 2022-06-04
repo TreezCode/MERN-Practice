@@ -1,23 +1,16 @@
 // external imports
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+import {IoMdClose} from 'react-icons/io'
 // internal imports
 import Spinner from './Spinner';
 import GoalItemEdit from './GoalItemEdit';
 import { useDeleteGoalMutation } from '../features/goals/goalApiSlice';
 
-function GoalItem({ goal, dispatch }) {
+function GoalItem({ goal }) {
+  const [editView, setEditView] = useState(false);
   const [deleteGoal, { isLoading, isSuccess, isError, error }] =
     useDeleteGoalMutation();
-  const [editView, setEditView] = useState(false);
-
-  const handleEdit = async () => {
-    try {
-      await dispatch(setEditView(true))
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
   // error/success effects
   useEffect(() => {
@@ -33,17 +26,18 @@ function GoalItem({ goal, dispatch }) {
   // item content
   const content = (
     <div className='goal'>
+      <p>Created at:</p>
       <div>{new Date(goal.createdAt).toLocaleString('en-US')}</div>
-      <input
+      <textarea
         className='goal-text'
         type='text'
         value={goal.text}
         readOnly={true}
       />
       <button onClick={() => deleteGoal(goal._id)} className='close'>
-        X
+        <IoMdClose />
       </button>
-      <button onClick={handleEdit} className='btn edit'>
+      <button onClick={() => setEditView(true)} className='btn edit'>
         edit
       </button>
     </div>

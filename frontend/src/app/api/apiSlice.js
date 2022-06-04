@@ -1,4 +1,6 @@
+// external imports
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+// internal imports
 import { setCredentials, signOut } from '../../features/auth/authSlice';
 
 const baseQuery = fetchBaseQuery({

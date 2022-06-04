@@ -12,8 +12,7 @@ import Spinner from './Spinner';
 function Header() {
   const dispatch = useDispatch();
   const user = useSelector(selectCurrentUser);
-  const [logout, { isLoading, isError, isSuccess, error }] =
-    useLogoutMutation();
+  const [logout, { isLoading, isError, error }] = useLogoutMutation();
 
   // handle logout
   const handleLogout = async () => {

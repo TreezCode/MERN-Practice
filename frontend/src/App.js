@@ -1,12 +1,14 @@
+// external imports
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Header from './components/Header';
-import DarkMode from './components/DarkMode';
+// internal imports
 import Layout from './components/Layout';
-import Dashboard from './pages/Dashboard';
-import Login from './pages/Login';
+import DarkMode from './components/DarkMode';
+import Header from './components/Header';
 import Register from './pages/Register';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
 import User from './pages/User';
 import RequireAuth from './features/auth/RequireAuth';
 

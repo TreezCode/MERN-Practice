@@ -1,34 +1,19 @@
 // external imports
 import { useEffect, useRef, useState } from 'react';
 import { toast } from 'react-toastify';
+import {BiArrowBack} from 'react-icons/bi'
 // internal imports
+import GoalItem from './GoalItem';
 import Spinner from './Spinner';
-import { useUpdateGoalMutation, useDeleteGoalMutation } from '../features/goals/goalApiSlice';
+import { useUpdateGoalMutation } from '../features/goals/goalApiSlice';
 
 function GoalItemEdit({ goal }) {
-  const [deleteGoal] = useDeleteGoalMutation();
   const [updateGoal, { isLoading, isSuccess, isError, error }] = useUpdateGoalMutation();
   const ref = useRef(null);
-  const { _id, text, createdAt } = goal;
+  const { _id, text, updatedAt } = goal;
   const [newText, setNewText] = useState(text);
-
-  // handle input
-  const onChange = () => {
-    setNewText(() => ({
-      text: ref.current.value,
-    }));
-  };
-
-  // handle delete
-  const handleDelete = () => {
-    deleteGoal(_id).unwrap();
-  };
-
-  // handle update
-  const handleUpdate = () => {
-    updateGoal({ _id, newText }).unwrap();
-  };
-
+  const [editView, setEditView] = useState(true);
+  
   // update effects
   useEffect(() => {
     if (isError) {
@@ -40,20 +25,33 @@ function GoalItemEdit({ goal }) {
     }
   }, [isSuccess, isError, error]);
 
+  // handle input
+  const onChange = () => {
+    setNewText(() => ({
+      text: ref.current.value,
+    }));
+  };
+
+  // handle update
+  const handleUpdate = () => {
+    updateGoal({ _id, newText }).unwrap();
+  };
+  
   // item content
   const content = (
-    <div className='goal goal-edit'>
-      <div>{new Date(createdAt).toLocaleString('en-US')}</div>
-      <input
-        className='goal-text goal-text-edit'
+    <div className='goal'>
+      Last update:
+      <div>{new Date(updatedAt).toLocaleString('en-US')}</div>
+      <textarea
+        className='edit-text'
         type='text'
         defaultValue={text}
         onChange={onChange}
         ref={ref}
         readOnly={false}
       />
-      <button onClick={handleDelete} className='close'>
-        X
+      <button onClick={() => setEditView(false)} className='close'>
+        <BiArrowBack />
       </button>
       <button onClick={handleUpdate} className='btn save'>
         save
@@ -62,7 +60,11 @@ function GoalItemEdit({ goal }) {
   );
 
   // render
-  return isLoading ? <Spinner /> : content;
+  return isLoading 
+    ? <Spinner /> 
+    : !editView 
+      ? <GoalItem goal={goal} /> 
+      : content;
 }
 
 export default GoalItemEdit;

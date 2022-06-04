@@ -1,3 +1,4 @@
+// internal imports
 import { apiSlice } from '../../app/api/apiSlice';
 
 export const goalApiSlice = apiSlice.injectEndpoints({

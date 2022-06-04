@@ -1,11 +1,13 @@
+// external imports
 import { useRef, useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FaSignInAlt } from 'react-icons/fa';
+// internal imports
+import Spinner from '../components/Spinner';
 import { setCredentials } from '../features/auth/authSlice';
 import { useLoginMutation } from '../features/auth/authApiSlice';
-import Spinner from '../components/Spinner';
 
 function Login() {
   // store local state for form data

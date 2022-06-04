@@ -1,5 +1,6 @@
 :root {
   --font: #000;
+  --font-reverse: #fff;
   --link: #000;
   --background: #fff;
   --header-hover: #777;
@@ -8,7 +9,7 @@
   --textarea-border: #e6e6e6;
   --textarea-background: #e6e6e6;
   --card-background: #bebebe;
-  --edit-background: rgb(221, 221, 221);
+  --edit-background: #121212;
   --edit-btn-background: #17111f;
   --save-btn-background: #111f17;
   --btn-border: #000;
@@ -22,6 +23,7 @@
 
 [data-theme='dark'] {
   --font: #fff;
+  --font-reverse: #000;
   --link: #fff;
   --background: #121212;
   --header-hover: #909090;
@@ -30,9 +32,9 @@
   --textarea-border: #2e2e2e;
   --textarea-background: #fffbfb;
   --card-background: #383838;
-  --edit-background: #000;
-  --edit-btn-background: #17111f;
-  --save-btn-background: #111f17;
+  --edit-background: #fff;
+  --edit-btn-background: #2c1649;
+  --save-btn-background: #093b1f;
   --btn-border: #121212;
   --btn-background: #000;
   --btn-font: #fff;
@@ -75,8 +77,8 @@ a {
   background-color: var(--background);
 }
 
-.goal-text-edit {
-  color: var(--font);
+.edit-text {
+  color: var(--font-reverse);
   background-color: var(--edit-background);
 }
 
@@ -93,7 +95,7 @@ a {
 }
 
 .close:hover {
-  color: rgb(131, 0, 0);
+  color: rgb(136, 1, 1);
 }
 
 .errMsg {

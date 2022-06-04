@@ -1,23 +1,20 @@
+// external imports
 import { useEffect } from 'react';
-import { toast } from 'react-toastify'
+import { toast } from 'react-toastify';
+// internal imports
 import Spinner from '../components/Spinner';
 import { useGetUserQuery } from '../features/auth/authApiSlice';
 
 const User = () => {
-  const {
-    data: user,
-    isLoading,
-    isError,
-    error,
-  } = useGetUserQuery();
+  const { data: user, isLoading, isError, error } = useGetUserQuery();
 
   // error effects
   useEffect(() => {
-    if(isError) {
+    if (isError) {
       const message = error?.data?.message;
       !message ? toast.error(error) : toast.error(message);
     }
-  })
+  });
 
   // page content
   const content = (
@@ -29,7 +26,7 @@ const User = () => {
       <p>{new Date(user?.updatedAt).toLocaleString('en-US')}</p>
     </section>
   );
-  
+
   // render
   return isLoading ? <Spinner /> : content;
 };

@@ -1,7 +1,9 @@
+// external imports
 import { configureStore } from '@reduxjs/toolkit';
+// internal imports
+import { apiSlice } from './api/apiSlice';
 import goalReducer from '../features/goals/goalSlice';
 import authReducer from '../features/auth/authSlice';
-import { apiSlice } from './api/apiSlice';
 
 export const store = configureStore({
   reducer: {

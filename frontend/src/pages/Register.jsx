@@ -1,8 +1,10 @@
+// external imports
 import { useState, useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FaUser } from 'react-icons/fa';
+// internal imports
 import Spinner from '../components/Spinner';
 import { useRegisterMutation } from '../features/auth/authApiSlice';
 import { setCredentials } from '../features/auth/authSlice';
@@ -15,11 +17,15 @@ function Register() {
     password: '',
     password2: '',
   });
+  // destructure state
   const { username, email, password, password2 } = formData;
 
   const [register, { isLoading, isError, isSuccess, error }] = useRegisterMutation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  // --------- TODO ----------
+  // create dynamic input errors
+  // --------- TODO ----------
   const errRef = useRef();
   const [errMsg, setErrMsg] = useState('');
 
