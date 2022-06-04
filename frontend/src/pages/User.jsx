@@ -6,6 +6,7 @@ import Spinner from '../components/Spinner';
 import { useGetUserQuery } from '../features/auth/authApiSlice';
 
 const User = () => {
+  // destructure rtk query
   const { data: user, isLoading, isError, error } = useGetUserQuery();
 
   // error effects
@@ -20,9 +21,14 @@ const User = () => {
   const content = (
     <section className='heading'>
       <h1>Welcome {user?.username}</h1>
+      <br />
+      <h4>Email: </h4>
       <p>{user?.email}</p>
       <br />
-      <h4>Updated at: </h4>
+      <h4>Joined: </h4>
+      <p>{new Date(user?.createdAt).toLocaleString('en-US')}</p>
+      <br />
+      <h4>Last Update: </h4>
       <p>{new Date(user?.updatedAt).toLocaleString('en-US')}</p>
     </section>
   );

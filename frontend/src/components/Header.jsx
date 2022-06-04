@@ -5,15 +5,19 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa';
 // internal imports
+import Spinner from './Spinner';
 import { selectCurrentUser, signOut } from '../features/auth/authSlice';
 import { useLogoutMutation } from '../features/auth/authApiSlice';
-import Spinner from './Spinner';
 
 function Header() {
   const dispatch = useDispatch();
-  const user = useSelector(selectCurrentUser);
-  const [logout, { isLoading, isError, error }] = useLogoutMutation();
 
+  // current user from global state
+  const user = useSelector(selectCurrentUser);
+
+  // destructure mutation
+  const [logout, { isLoading, isError, error }] = useLogoutMutation();
+  
   // handle logout
   const handleLogout = async () => {
     try {
@@ -43,7 +47,7 @@ function Header() {
           <>
             <li>
               <Link to='/user'>
-                <FaSignInAlt /> settings
+                <FaUser /> User
               </Link>
             </li>
             <li>
@@ -69,7 +73,8 @@ function Header() {
       </ul>
     </header>
   );
-
+  
+  // render
   return isLoading ? <Spinner /> : content 
 }
 

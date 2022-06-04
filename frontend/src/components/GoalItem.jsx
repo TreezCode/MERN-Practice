@@ -3,22 +3,30 @@ import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import {IoMdClose} from 'react-icons/io'
 // internal imports
-import Spinner from './Spinner';
 import GoalItemEdit from './GoalItemEdit';
+import Spinner from './Spinner';
 import { useDeleteGoalMutation } from '../features/goals/goalApiSlice';
 
 function GoalItem({ goal }) {
-  const [editView, setEditView] = useState(false);
-  const [deleteGoal, { isLoading, isSuccess, isError, error }] =
-    useDeleteGoalMutation();
+  // destructure goal
+  const { _id, text, createdAt} = goal
 
-  // error/success effects
+  // local state
+  const [editView, setEditView] = useState(false);
+
+  // destructure mutation
+  const [deleteGoal, { isLoading, isSuccess, isError, error }] = useDeleteGoalMutation();
+  
+  // delete effects
   useEffect(() => {
     if (isError) {
       const message = error?.data?.message;
       !message ? toast.error(error) : toast.error(message);
     }
     if (isSuccess) {
+      // ----------- TODO -----------
+      // create goal deleted success message
+      // ----------- TODO -----------
       // console.log('Goal deleted!');
     }
   }, [isSuccess, isError, error]);
@@ -27,14 +35,14 @@ function GoalItem({ goal }) {
   const content = (
     <div className='goal'>
       <p>Created at:</p>
-      <div>{new Date(goal.createdAt).toLocaleString('en-US')}</div>
+      <div>{new Date(createdAt).toLocaleString('en-US')}</div>
       <textarea
         className='goal-text'
         type='text'
-        value={goal.text}
+        value={text}
         readOnly={true}
       />
-      <button onClick={() => deleteGoal(goal._id)} className='close'>
+      <button onClick={() => deleteGoal(_id)} className='close'>
         <IoMdClose />
       </button>
       <button onClick={() => setEditView(true)} className='btn edit'>
@@ -42,7 +50,7 @@ function GoalItem({ goal }) {
       </button>
     </div>
   );
-
+  
   // render
   return isLoading 
     ? <Spinner />

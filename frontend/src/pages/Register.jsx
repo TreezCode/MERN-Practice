@@ -10,6 +10,9 @@ import { useRegisterMutation } from '../features/auth/authApiSlice';
 import { setCredentials } from '../features/auth/authSlice';
 
 function Register() {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   // create local state for form data
   const [formData, setFormData] = useState({
     username: '',
@@ -17,28 +20,27 @@ function Register() {
     password: '',
     password2: '',
   });
+
   // destructure state
   const { username, email, password, password2 } = formData;
 
-  const [register, { isLoading, isError, isSuccess, error }] = useRegisterMutation();
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
+  // destructure rtk mutation
+  const [register, { isLoading, isSuccess }] = useRegisterMutation();
+  
+  // local state/reference for errors
+  const [errMsg, setErrMsg] = useState('');
+  const errRef = useRef();
+  
   // --------- TODO ----------
   // create dynamic input errors
   // --------- TODO ----------
-  const errRef = useRef();
-  const [errMsg, setErrMsg] = useState('');
-
+  
   // register effects
   useEffect(() => {
-    if (isError) {
-      const message = error?.data?.message;
-      !message ? toast.error(error) : toast.error(message);
-    }
     if (isSuccess) {
       navigate('/');
     }
-  }, [isError, isSuccess, error, navigate, dispatch]);
+  }, [isSuccess, navigate, dispatch]);
 
   // handle input
   const onChange = (e) => {
@@ -60,14 +62,16 @@ function Register() {
         dispatch(setCredentials({ email, ...credentials }));
         navigate('/');
       } catch (error) {
+        const message = error?.data?.message;
+        !message ? toast.error(error) : toast.error(message);
         if (!error?.status) {
           setErrMsg('No Server Response');
         } else if (error?.status === 400) {
-          setErrMsg('Invalid email or password');
+          setErrMsg(message);
         } else if (error?.status === 401) {
           setErrMsg('Unauthorized');
         } else {
-          setErrMsg('Login failed...');
+          setErrMsg('Registration failed...');
         }
         // errRef.current.focus();
       }
@@ -83,6 +87,9 @@ function Register() {
         </h1>
         <p>Please create an account</p>
       </section>
+      <p ref={errRef} className={errMsg ? 'errMsg' : 'hidden'}>
+        {errMsg}
+      </p>
       <section className='form'>
         <form onSubmit={onSubmit}>
           <div className='form-group'>

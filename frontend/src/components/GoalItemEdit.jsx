@@ -8,11 +8,18 @@ import Spinner from './Spinner';
 import { useUpdateGoalMutation } from '../features/goals/goalApiSlice';
 
 function GoalItemEdit({ goal }) {
-  const [updateGoal, { isLoading, isSuccess, isError, error }] = useUpdateGoalMutation();
-  const ref = useRef(null);
+  // destructure goal
   const { _id, text, updatedAt } = goal;
-  const [newText, setNewText] = useState(text);
+
+  // local state
   const [editView, setEditView] = useState(true);
+  const [newText, setNewText] = useState(text);
+
+  // text reference
+  const ref = useRef(null);
+
+  // destructure mutation
+  const [updateGoal, { isLoading, isSuccess, isError, error }] = useUpdateGoalMutation();
   
   // update effects
   useEffect(() => {
@@ -21,6 +28,9 @@ function GoalItemEdit({ goal }) {
       !message ? toast.error(error) : toast.error(message);
     }
     if (isSuccess) {
+      // ----------- TODO -----------
+      // create goal updated success message
+      // ----------- TODO -----------
       // console.log('Goal updated!');
     }
   }, [isSuccess, isError, error]);
@@ -32,11 +42,6 @@ function GoalItemEdit({ goal }) {
     }));
   };
 
-  // handle update
-  const handleUpdate = () => {
-    updateGoal({ _id, newText }).unwrap();
-  };
-  
   // item content
   const content = (
     <div className='goal'>
@@ -53,12 +58,12 @@ function GoalItemEdit({ goal }) {
       <button onClick={() => setEditView(false)} className='close'>
         <BiArrowBack />
       </button>
-      <button onClick={handleUpdate} className='btn save'>
+      <button onClick={() => updateGoal({ _id, newText }).unwrap()} className='btn save'>
         save
       </button>
     </div>
   );
-
+  
   // render
   return isLoading 
     ? <Spinner /> 

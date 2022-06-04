@@ -1,3 +1,4 @@
+// external imports
 import { Outlet } from 'react-router-dom';
 
 function Layout() {

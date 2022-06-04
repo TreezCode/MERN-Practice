@@ -9,7 +9,7 @@ const setLight = () => {
   document.documentElement.setAttribute('data-theme', 'light')
 }
 
-// Check the users theme preference
+// Check users theme preference
 const storedTheme = localStorage.getItem('theme')
 const prefersDark =
   window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -19,6 +19,7 @@ if (defaultDark) {
   setDark()
 }
 
+// handle toggle
 const toggleTheme = (e) => {
   if (e.target.checked) {
     setDark()

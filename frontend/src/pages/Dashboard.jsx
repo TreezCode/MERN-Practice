@@ -15,10 +15,14 @@ import { setGoals } from '../features/goals/goalSlice';
 function Dashboard() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  // current global user
   const currentUser = useSelector(selectCurrentUser);
+
+  // destructure rtk queries
   const { data: user, isLoading } = useGetUserQuery(currentUser);
   const { data: goals, isFetching, isError, error } = useGetGoalsQuery(currentUser);
-
+  
   // currentUser effects
   useEffect(() => {
     if (!currentUser) {
@@ -26,19 +30,15 @@ function Dashboard() {
     }
   }, [currentUser, navigate]);
 
-  useEffect(() => {
-    dispatch(setGoals(goals))
-  }, [goals, dispatch])
-
-  // error effects
+  // goal effects
   useEffect(() => {
     if (isError) {
       const message = error?.data?.message;
       !message ? toast.error(error) : toast.error(message);
     }
-  }, [isError, error]);
+    dispatch(setGoals(goals))
+  }, [goals, isError, error, dispatch])
   
-
   // page content
   const content = (
     <>

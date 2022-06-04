@@ -10,8 +10,8 @@
   --textarea-background: #e6e6e6;
   --card-background: #bebebe;
   --edit-background: #121212;
-  --edit-btn-background: #17111f;
-  --save-btn-background: #111f17;
+  --edit-btn-background: #2c1649;
+  --save-btn-background: #093b1f;
   --btn-border: #000;
   --btn-background: #000;
   --btn-font: #fff;
@@ -91,7 +91,7 @@ a {
 }
 
 .close {
-  color: var(--background);
+  color: var(--font);
 }
 
 .close:hover {

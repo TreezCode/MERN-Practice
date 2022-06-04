@@ -2,24 +2,25 @@
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 // internal imports
-import { useSetGoalMutation } from '../features/goals/goalApiSlice';
 import Spinner from './Spinner';
+import { useSetGoalMutation } from '../features/goals/goalApiSlice';
 
 function GoalForm() {
-  const [setGoal, { isLoading, isSuccess, isError, error }] =
-  useSetGoalMutation();
+  // local state
   const [text, setText] = useState('');
 
-  // goal effects
+  // destructure mutation
+  const [setGoal, { isLoading, isSuccess }] = useSetGoalMutation();
+
+  // set effects
   useEffect(() => {
-    if (isError) {
-      const message = error?.data?.message;
-      !message ? toast.error(error) : toast.error(message);
-    }
     if (isSuccess) {
+      // ----------- TODO -----------
+      // create goal created success message
+      // ----------- TODO -----------
       // console.log('Goal created!');
     }
-  }, [isError, isSuccess, error]);
+  }, [isSuccess]);
 
   // handle submit
   const onSubmit = async (e) => {
@@ -27,7 +28,8 @@ function GoalForm() {
     try {
       const createdGoal = await setGoal({ text }).unwrap();
     } catch (error) {
-      // console.log(error);
+      const message = error?.data?.message;
+      !message ? toast.error(error) : toast.error(message);
     }
     setText('');
   };
@@ -54,7 +56,7 @@ function GoalForm() {
       </form>
     </section>
   );
-
+  
   // render
   return isLoading ? <Spinner /> : content;
 }

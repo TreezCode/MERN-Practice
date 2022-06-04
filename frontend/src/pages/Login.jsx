@@ -10,33 +10,40 @@ import { setCredentials } from '../features/auth/authSlice';
 import { useLoginMutation } from '../features/auth/authApiSlice';
 
 function Login() {
-  // store local state for form data
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  // local state for form data
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   });
+
+  // destructure form state
   const { email, password } = formData;
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const [login, { isLoading, isError, isSuccess, error }] = useLoginMutation();
+
+  // destructure rtk mutation
+  const [login, { isLoading, isSuccess }] = useLoginMutation();
+
+  // local state/reference for errors
   const [errMsg, setErrMsg] = useState('');
   const errRef = useRef();
 
-  // login effects
-  useEffect(() => {
-    if (isError) {
-      const message = error?.data?.message;
-      !message ? toast.error(error) : toast.error(message);
-    }
-    if (isSuccess) {
-      navigate('/');
-    }
-  }, [isSuccess, isError, error, navigate]);
-  
+  // --------- TODO ----------
+  // create dynamic input errors
+  // --------- TODO ----------
+
   // input effects
   useEffect(() => {
     setErrMsg('');
   }, [email, password]);
+
+  // login effects
+  useEffect(() => {
+    if (isSuccess) {
+      navigate('/');
+    }
+  }, [isSuccess, navigate]);
 
   // handle input
   const onChange = (e) => {
@@ -58,10 +65,12 @@ function Login() {
       });
       navigate('/');
     } catch (error) {
+      const message = error?.data?.message;
+      !message ? toast.error(error) : toast.error(message);
       if (!error?.status) {
         setErrMsg('No Server Response');
       } else if (error?.status === 400) {
-        setErrMsg('Invalid email or password');
+        setErrMsg(message);
       } else if (error?.status === 401) {
         setErrMsg('Unauthorized');
       } else {
