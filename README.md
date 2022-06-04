@@ -8,8 +8,8 @@ MERN Stack REST API goal tracker app built utilizing Redux Toolkit's global stat
 
 ## How it Works 🔨
 The authentication flow is built with JWT(JSON Web Token) access and refresh tokens, using secure cookies and an RTK Query base query 'ReAuth' container, assuring any access token is only stored in memory and refreshed when necessary.
-
 <br> 
+
 ```
 const baseQueryWithReauth = async (args, api, extraOptions) => {
   let result = await baseQuery(args, api, extraOptions);
