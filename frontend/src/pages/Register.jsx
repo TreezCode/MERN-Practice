@@ -51,7 +51,6 @@ function Register() {
       try {
         const userData = { username, email, password };
         const credentials = await register(userData).unwrap();
-        console.log('login data...', credentials);
         dispatch(setCredentials({ email, ...credentials }));
         navigate('/');
       } catch (error) {

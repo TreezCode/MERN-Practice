@@ -11,7 +11,7 @@ const handleRefreshToken = async (req, res) => {
   const cookies = req.cookies;
   if (!cookies?.jwt) return res.sendStatus(401); // unauthorized
   const refreshToken = cookies.jwt;
-  console.log('Refresh Token ==> '.yellow, refreshToken);
+  console.log('Refresh Token Granted ==>'.blue, refreshToken);
   // Check for user token in database
   const user = await User.findOne({ refreshToken }).select('-password');
   const userID = user._id.toString();
@@ -22,14 +22,12 @@ const handleRefreshToken = async (req, res) => {
   }
   // Verify token
   if (user) {
-    console.log('UserID ==>'.yellow, userID);
     jwt.verify(
       refreshToken,
       process.env.REFRESH_TOKEN_SECRET,
       (err, decoded) => {
-        console.log('Err ==>'.magenta, err);
-        console.log('Decoded ==>'.magenta, decoded);
         if (err || userID !== decoded.id) {
+          console.log('Err ==>'.magenta, err);
           return res.sendStatus(403); // expired or forbidden
         }
         const accessToken = generateAccessToken(decoded.id);

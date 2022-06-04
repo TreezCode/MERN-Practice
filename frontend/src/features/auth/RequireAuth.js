@@ -1,5 +1,7 @@
+// external imports
 import { useLocation, Navigate, Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
+// internal imports
 import { selectCurrentToken } from "./authSlice";
 
 function RequireAuth() {

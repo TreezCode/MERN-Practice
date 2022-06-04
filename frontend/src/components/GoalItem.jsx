@@ -1,11 +1,23 @@
-import { useEffect } from 'react';
+// external imports
+import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+// internal imports
+import Spinner from './Spinner';
+import GoalItemEdit from './GoalItemEdit';
 import { useDeleteGoalMutation } from '../features/goals/goalApiSlice';
-import Spinner from '../components/Spinner';
 
-function GoalItem({ goal }) {
+function GoalItem({ goal, dispatch }) {
   const [deleteGoal, { isLoading, isSuccess, isError, error }] =
     useDeleteGoalMutation();
+  const [editView, setEditView] = useState(false);
+
+  const handleEdit = async () => {
+    try {
+      await dispatch(setEditView(true))
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   // error/success effects
   useEffect(() => {
@@ -14,7 +26,7 @@ function GoalItem({ goal }) {
       !message ? toast.error(error) : toast.error(message);
     }
     if (isSuccess) {
-      console.log('Goal deleted!');
+      // console.log('Goal deleted!');
     }
   }, [isSuccess, isError, error]);
 
@@ -22,18 +34,27 @@ function GoalItem({ goal }) {
   const content = (
     <div className='goal'>
       <div>{new Date(goal.createdAt).toLocaleString('en-US')}</div>
-      <h2>{goal.text}</h2>
+      <input
+        className='goal-text'
+        type='text'
+        value={goal.text}
+        readOnly={true}
+      />
       <button onClick={() => deleteGoal(goal._id)} className='close'>
         X
       </button>
-      <button onClick={() => {}} className='btn edit'>
+      <button onClick={handleEdit} className='btn edit'>
         edit
       </button>
     </div>
   );
 
   // render
-  return isLoading ? <Spinner /> : content;
+  return isLoading 
+    ? <Spinner />
+    : editView 
+      ? <GoalItemEdit goal={goal} /> 
+      : content
 }
 
 export default GoalItem;

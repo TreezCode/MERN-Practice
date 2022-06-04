@@ -8,6 +8,9 @@
   --textarea-border: #e6e6e6;
   --textarea-background: #e6e6e6;
   --card-background: #bebebe;
+  --edit-background: rgb(221, 221, 221);
+  --edit-btn-background: #17111f;
+  --save-btn-background: #111f17;
   --btn-border: #000;
   --btn-background: #000;
   --btn-font: #fff;
@@ -27,6 +30,9 @@
   --textarea-border: #2e2e2e;
   --textarea-background: #fffbfb;
   --card-background: #383838;
+  --edit-background: #000;
+  --edit-btn-background: #17111f;
+  --save-btn-background: #111f17;
   --btn-border: #121212;
   --btn-background: #000;
   --btn-font: #fff;
@@ -60,7 +66,38 @@ a {
 }
 
 .goal {
+  color: var(--font);
   background-color: var(--card-background);
+}
+
+.goal-text {
+  color: var(--font);
+  background-color: var(--background);
+}
+
+.goal-text-edit {
+  color: var(--font);
+  background-color: var(--edit-background);
+}
+
+.goal .edit {
+  background-color: var(--edit-btn-background);
+}
+
+.goal .save {
+  background-color: var(--save-btn-background);
+}
+
+.close {
+  color: var(--background);
+}
+
+.close:hover {
+  color: rgb(131, 0, 0);
+}
+
+.errMsg {
+  color: red;
 }
 
 .form-group input {

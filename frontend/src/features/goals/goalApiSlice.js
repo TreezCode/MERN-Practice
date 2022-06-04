@@ -12,11 +12,14 @@ export const goalApiSlice = apiSlice.injectEndpoints({
       invalidatesTags: ['Goal'],
     }),
     updateGoal: builder.mutation({
-      query: (goalData, id) => ({
-        url: `/api/users/${id}`,
-        method: 'PUT',
-        body: { ...goalData },
-      }),
+      query: (data) => {
+        const { _id, newText } = data;
+        return {
+          url: `/api/goals/${_id}`,
+          method: 'PUT',
+          body: { ...newText }
+        }
+      },
       invalidatesTags: ['Goal'],
     }),
     deleteGoal: builder.mutation({

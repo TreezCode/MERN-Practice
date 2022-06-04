@@ -1797,3 +1797,276 @@
 20220602	20:36:48	fd9ef08d-394f-4ab6-905b-0b40dcac817b	Error: Failed to authenticate token
 20220602	20:36:48	0e9a9e9e-ec4f-4d73-ab5d-87fc994681d8	Error: Failed to authenticate token
 20220602	20:57:03	25f85e23-9591-4ab9-9c5c-f788dde0066c	Error: Failed to authenticate token
+20220603	01:29:16	e506733a-d899-4761-a8f6-e7571e382f3b	Error: Failed to authenticate token
+20220603	01:29:28	dfcee5ac-e195-4943-92e1-1afbf36ea65d	Error: Failed to authenticate token
+20220603	01:29:39	c9f27fcb-5172-45b7-a7c1-86046bea2646	Error: Failed to authenticate token
+20220603	01:30:19	18e2bea1-c217-4a68-b861-523b6f41b2d7	Error: Failed to authenticate token
+20220603	02:05:06	1f90d437-d5f5-4f05-a5d1-212c1a34615a	Error: Failed to authenticate token
+20220603	02:34:24	239d4a37-0c4f-4aa1-835d-7245fc2787cb	Error: Failed to authenticate token
+20220603	02:47:19	8da4f69b-5262-41c6-b5db-bef98df79230	Error: Failed to authenticate token
+20220603	02:47:19	6dac49cf-c427-4bdd-af31-296a014744a2	Error: Failed to authenticate token
+20220603	02:48:50	c3044b75-07f2-4c84-86e7-4effaffef18e	Error: Failed to authenticate token
+20220603	02:48:50	0bfe05b2-f853-40be-bf96-56e77b18f489	Error: Failed to authenticate token
+20220603	02:50:04	bd6124b7-4d49-4869-ab1d-9dd79fb9bc84	Error: Failed to authenticate token
+20220603	02:50:04	e5939fbb-1409-46f3-8d6f-9e79129c8865	Error: Failed to authenticate token
+20220603	02:50:23	efdabc7f-ed92-4e41-ac7a-01d112993d29	Error: Failed to authenticate token
+20220603	02:50:23	7e0cdb88-1bdb-4b7d-a40c-0775024b6870	Error: Failed to authenticate token
+20220603	02:50:49	5f4eddc1-f61b-434d-853a-912926a7f8a9	Error: Failed to authenticate token
+20220603	02:50:49	d42d5ddb-a4be-4ec5-9b88-1e9682c7fc2e	Error: Failed to authenticate token
+20220603	02:51:03	b40d9caa-f15e-40f5-bb2c-95d6e09a1e7d	Error: Failed to authenticate token
+20220603	02:51:03	5434f931-690c-4c57-81af-9aa6485203fb	Error: Failed to authenticate token
+20220603	02:51:56	1d49ad5f-7d39-4217-8958-e6a6b6cd1e87	Error: Failed to authenticate token
+20220603	02:51:56	922c9d3d-bffe-49f8-a586-e3f19f832924	Error: Failed to authenticate token
+20220603	02:56:07	d36fa8a4-cd51-45d2-80fe-c79a0df53605	Error: Failed to authenticate token
+20220603	02:56:07	c7c70971-2620-4334-a8d2-cc8c13b5c344	Error: Failed to authenticate token
+20220603	02:57:12	e5efd38c-c06a-4455-b3cc-2ab7796447ff	Error: Failed to authenticate token
+20220603	02:57:12	76f1afe7-5837-4cae-b140-f9968243fa2f	Error: Failed to authenticate token
+20220603	02:57:49	7d731ab2-b820-4572-8e5b-8b2f6c6cd096	Error: Failed to authenticate token
+20220603	02:57:49	53fd32cc-c488-4a1d-94d9-29601635614e	Error: Failed to authenticate token
+20220603	03:15:35	3b8f5388-0109-4717-a366-bf386eb1fbf9	Error: Failed to authenticate token
+20220603	03:15:35	7d9f4155-7d8a-4f5c-9bd2-adc64e5b44c0	Error: Failed to authenticate token
+20220603	03:16:37	c78d149e-f042-4889-99b1-09e2d2b2cbe3	Error: Failed to authenticate token
+20220603	03:16:37	b30e0dea-cd97-4ad1-bd4e-5d3a9dc94c4c	Error: Failed to authenticate token
+20220603	03:22:15	75ad381e-b8e0-4490-b805-a8d9e6034c28	Error: Failed to authenticate token
+20220603	03:24:20	a58bb1a3-6b2a-478c-a353-15f3ad6255a2	Error: Failed to authenticate token
+20220603	03:24:20	d9d5a576-b9b3-428a-97a0-c58a0e353654	Error: Failed to authenticate token
+20220603	03:25:54	dfd789ea-8983-4e3b-8cd8-fab72e04b321	Error: Failed to authenticate token
+20220603	03:25:54	a4bd10c3-8da3-4e66-b35d-17de39ec0baf	Error: Failed to authenticate token
+20220603	03:27:16	fec7a390-1bc8-4791-b775-57260d641096	Error: Failed to authenticate token
+20220603	03:27:16	a26bf4f1-ff8d-40ed-986d-c6d018af206c	Error: Failed to authenticate token
+20220603	03:27:34	c89b3a8d-f118-4c4d-aa68-a2aab8f41604	Error: Failed to authenticate token
+20220603	03:31:22	e1460823-c9f4-417a-a296-6526dd477298	Error: Failed to authenticate token
+20220603	03:31:22	5b22ee4e-5d3c-4c7e-b6d1-1614c213f90b	Error: Failed to authenticate token
+20220603	03:31:58	0e2a205e-d70d-4658-82af-ed915edbd282	Error: Failed to authenticate token
+20220603	03:32:12	6427a8c8-2c41-4e42-9a6e-7112231df47c	Error: Failed to authenticate token
+20220603	03:39:51	a9cad6b7-70a8-4082-9c14-5f5bf6309d2e	Error: Failed to authenticate token
+20220603	03:40:02	a9750330-7609-48a9-870d-8b408ab96dfc	Error: Failed to authenticate token
+20220603	03:40:26	6a911108-b750-4a95-9644-28c8e168adf4	Error: Failed to authenticate token
+20220603	12:52:32	1c10df28-5d33-474a-bcea-672fdc794f43	Error: Failed to authenticate token
+20220603	12:52:43	1f0e3a32-7a31-4b22-8ef4-254f53031217	Error: Failed to authenticate token
+20220603	12:52:45	8ff2f161-cc17-4249-9367-d41a9cbd61e9	Error: Please add to the text field
+20220603	13:04:47	ebe1f1b5-ad4d-4841-969c-f9f68f782a91	Error: Failed to authenticate token
+20220603	13:06:31	fe31ea78-ddff-4fcc-b1f0-3f3419b2c896	Error: Failed to authenticate token
+20220603	13:38:22	9f4fdcd1-028f-4ac7-9bd5-30c5808b29ad	Error: Failed to authenticate token
+20220603	13:51:14	f5808a8b-5b01-457a-9316-165f2718a1c7	Error: Failed to authenticate token
+20220603	13:51:14	bfa472e8-5cab-4a2a-8c25-1a6676938eea	Error: Please add to the text field
+20220603	13:51:29	5931bc9a-8e18-48ea-9a33-e23c481c5d97	Error: Failed to authenticate token
+20220603	13:51:30	9a4e60bf-835f-4f75-86ef-4e5b9ca3dace	Error: Please add to the text field
+20220603	13:51:48	91ec7d8e-2a31-4c46-aae5-e0d53ad1d579	Error: Failed to authenticate token
+20220603	13:51:48	8700e0d1-6ff5-4481-a8bb-d35f85b3f327	Error: Please add to the text field
+20220603	14:03:42	0d5db71a-8124-4b7b-a084-a90e5d3c28b9	Error: Failed to authenticate token
+20220603	14:10:05	2796f63c-9fb2-426c-8c7c-d5d84636a53f	Error: Failed to authenticate token
+20220603	14:10:52	1da23f51-d6d2-4d8b-91ee-004d5d89182c	Error: Failed to authenticate token
+20220603	14:11:20	d4e67dcb-ac69-4dee-bc5c-fe87f51cc472	Error: Failed to authenticate token
+20220603	14:12:11	6d8b85cf-e519-48d6-b6c0-7ccac0ea1447	Error: Failed to authenticate token
+20220603	14:12:28	824dcb9d-8720-4985-b724-b8c85b3ddd93	Error: Failed to authenticate token
+20220603	14:12:52	c1226c71-58b8-456c-95eb-c3263050e76f	Error: Failed to authenticate token
+20220603	14:15:48	07a7acfc-1a9c-4be1-95d4-9eafb22e593a	Error: Failed to authenticate token
+20220603	14:15:48	01d2299d-0971-4ffa-8a22-bc737a281942	Error: Failed to authenticate token
+20220603	14:16:57	29cce8b7-61f5-4a72-97c6-53f28029f15c	Error: Failed to authenticate token
+20220603	14:16:57	b34493ee-c741-4646-a642-bfe4dd6854ae	Error: Failed to authenticate token
+20220603	14:17:24	8db9684f-cb6a-448a-871d-80158046bfda	Error: Failed to authenticate token
+20220603	14:17:34	457d057b-d59f-4b6e-9017-496c5a99dd98	Error: Failed to authenticate token
+20220603	14:18:34	7ce918b2-559f-4f32-8b23-72db476dbdea	Error: Failed to authenticate token
+20220603	14:19:22	10476521-af7b-48ab-81b0-4dfe7f7214fb	Error: Failed to authenticate token
+20220603	14:22:24	7098447e-ad70-4207-8508-f5becac18514	Error: Failed to authenticate token
+20220603	14:22:24	33d65f15-f787-4824-8088-ddae8ae72370	Error: Failed to authenticate token
+20220603	14:22:43	285fb531-e3df-49d1-8659-a7edf49e8474	Error: Failed to authenticate token
+20220603	14:22:43	9bc9145d-1bee-48b1-94f1-45fe62854909	Error: Failed to authenticate token
+20220603	14:23:30	5164f022-c89c-4012-8d7b-c3dc64e99b9d	Error: Failed to authenticate token
+20220603	14:23:30	24f3a2a3-bd6c-4251-a63f-f8d697038e46	Error: Failed to authenticate token
+20220603	14:26:59	b48689df-9d53-4160-96d9-fa861e038900	Error: Failed to authenticate token
+20220603	14:26:59	887035d1-7d7a-41f2-a13e-a151dca7f4af	Error: Failed to authenticate token
+20220603	15:02:28	0f5bfbfc-857d-4115-a280-e3af2def676b	Error: Failed to authenticate token
+20220603	15:10:40	2f2293eb-1834-44c0-84e2-04c4d608b86e	Error: Failed to authenticate token
+20220603	15:40:53	c83b5a7b-f7d1-4674-b600-7d2508096d73	Error: Failed to authenticate token
+20220603	15:40:53	321c324f-7cab-4e00-821c-eee0b2da7171	Error: Failed to authenticate token
+20220603	15:42:10	53fc288f-10cb-4932-9a1f-ffb0d7548987	Error: Failed to authenticate token
+20220603	15:44:55	fe1d5a7b-aad2-4aaf-a1c3-d4e057d5d795	Error: Failed to authenticate token
+20220603	15:45:09	a85ef159-630c-467a-b5a1-13f8b50029f9	Error: Failed to authenticate token
+20220603	15:45:25	0194f3fb-1a0a-481b-9f41-5b770bcedb8b	Error: Failed to authenticate token
+20220603	15:50:06	5df513be-dddd-4ee7-a39a-97d4cb6df1be	Error: Failed to authenticate token
+20220603	15:50:06	04dff62c-3f78-4717-9d56-d53cfda90f12	Error: Failed to authenticate token
+20220603	15:51:43	43134e05-7f5d-41ef-a7fa-6ab6560e7657	Error: Failed to authenticate token
+20220603	15:54:28	60a1ce54-f9ed-4c18-b7f9-8ee32475a789	Error: Failed to authenticate token
+20220603	15:54:54	83fdff67-7284-411a-9677-7d7dc0a8b526	Error: Failed to authenticate token
+20220603	15:56:35	83fc33ce-6146-4088-baa3-cf678e0ceeab	Error: Failed to authenticate token
+20220603	15:56:35	92d46dd5-7b03-469b-b379-f237a2414fce	Error: Failed to authenticate token
+20220603	15:56:46	f2693d99-ef9a-4a49-b3bf-577ce48782e6	Error: Failed to authenticate token
+20220603	15:57:13	6ee498cc-9c7e-4504-9d0b-b63267393e49	Error: Failed to authenticate token
+20220603	16:04:50	7869c723-9667-4cab-bedf-dfc93737755a	Error: Failed to authenticate token
+20220603	16:06:02	acee1697-8638-4bce-ab8c-97f49f72e9d7	Error: Failed to authenticate token
+20220603	16:06:16	10d7b9f6-3f1b-41df-8d6a-97e76fae4cb7	Error: Failed to authenticate token
+20220603	16:06:52	dfe34769-ffd1-45fe-b94b-ae42f491224f	Error: Failed to authenticate token
+20220603	16:07:10	7d3417b1-5635-407b-bb0a-45396cddd4b5	Error: Failed to authenticate token
+20220603	16:08:58	8fe7a68c-cd07-485d-9fa8-dba19c9d9662	Error: Failed to authenticate token
+20220603	16:11:08	fc2aa0c0-52df-48bc-8055-4667a1cff732	Error: Failed to authenticate token
+20220603	16:13:42	25932029-01c3-45db-9bb9-f7c20f5ab832	Error: Failed to authenticate token
+20220603	16:15:00	628c2d05-e2c6-42cb-905d-300ff5a19953	Error: Failed to authenticate token
+20220603	16:15:10	c44658b0-1a70-47f9-a468-d42108eb5d07	Error: Failed to authenticate token
+20220603	16:15:58	9bd29cc5-9692-41e8-bef7-cca2e085d677	Error: Failed to authenticate token
+20220603	16:16:25	4bd1255f-9787-423b-94d0-452d8a9283f0	Error: Failed to authenticate token
+20220603	16:17:02	37c8cc0c-cc83-40e5-bc46-ecbe04e3ef39	Error: Failed to authenticate token
+20220603	16:18:02	e7df5f97-7d0e-43fc-9e19-c0dd9fc65e1c	Error: Failed to authenticate token
+20220603	16:18:47	b724fbad-d2f3-4b56-a0c7-7d88f35b3dad	Error: Failed to authenticate token
+20220603	16:19:19	b19bb024-9604-48bb-8bdc-8a0c313d3853	Error: Failed to authenticate token
+20220603	16:19:39	045ed38f-2d20-4a3e-bf71-37cd67f5ce90	Error: Failed to authenticate token
+20220603	16:20:15	53eef706-a506-4700-8465-cebba74fa534	Error: Failed to authenticate token
+20220603	16:20:49	5c958d90-00b4-4f00-85e1-d2f7c7138b81	Error: Failed to authenticate token
+20220603	16:22:42	75e893fa-2d27-4921-a3db-cd8570e73071	Error: Failed to authenticate token
+20220603	16:22:58	38b2c491-8b5d-49a2-8b64-70f3cff0dd3f	Error: Failed to authenticate token
+20220603	16:24:01	64235771-f42f-4761-a155-7b8442c7aeed	Error: Failed to authenticate token
+20220603	16:24:58	707999d2-1dd3-44dc-a136-d0d5d5bada14	Error: Failed to authenticate token
+20220603	16:29:00	d9ac9504-7145-4f64-bfec-7706acfa412d	Error: Failed to authenticate token
+20220603	16:29:00	5b227594-872b-40b7-a47f-b3983e1dbde7	Error: Failed to authenticate token
+20220603	16:30:00	54da3f8e-927a-4867-948e-e5ea481fd8cd	Error: Failed to authenticate token
+20220603	16:31:22	044953bf-ae99-4157-85e5-5a1f2999131e	Error: Failed to authenticate token
+20220603	16:31:44	7304ad19-24e6-426d-9591-27957f3e1d47	Error: Failed to authenticate token
+20220603	16:32:13	c1618e79-dc6d-4041-8026-6e1a1c847460	Error: Failed to authenticate token
+20220603	16:32:58	56180df4-a161-4ac1-9594-bc13309c0c73	Error: Failed to authenticate token
+20220603	16:36:44	f4ce1cc8-e716-42dd-ad71-db819a98534e	Error: Failed to authenticate token
+20220603	16:36:44	1267ced5-16c7-495f-ba09-2ed70c842e66	Error: Failed to authenticate token
+20220603	16:36:57	b06a5865-2fb9-4c9b-8db1-3747e1a10f25	Error: Failed to authenticate token
+20220603	16:36:57	efadd190-05ce-4c7e-97cd-b31b142ce654	Error: Failed to authenticate token
+20220603	16:37:14	0689f024-8f3c-45ff-a17b-7dac1b1f904c	Error: Failed to authenticate token
+20220603	16:37:14	264e2061-79b7-41cb-93bf-7ce7bd3766fe	Error: Failed to authenticate token
+20220603	16:37:55	88867119-b5a9-4881-a6c3-0c55c30bdef8	Error: Failed to authenticate token
+20220603	16:39:55	1cd1ee99-7a1c-44a2-9b3e-3b59f7a05db9	Error: Failed to authenticate token
+20220603	16:40:07	796bf6a6-6f08-4e42-b92c-4a4a72abca50	Error: Failed to authenticate token
+20220603	16:41:28	6af3a438-2660-4376-b26a-962d76139fe3	Error: Failed to authenticate token
+20220603	16:44:05	6972ec9a-0085-43c7-8287-f4044ce82f1c	Error: Failed to authenticate token
+20220603	16:48:20	ae5db4c9-2eba-4699-8a73-33b3697ae828	Error: Failed to authenticate token
+20220603	17:50:00	bcefdbd6-c4c6-42e6-b96a-70d0552afa6e	Error: Failed to authenticate token
+20220603	17:51:02	dee06524-7490-4d3a-9d89-8ebb95e0d2d4	Error: Failed to authenticate token
+20220603	17:52:15	c96c8a1a-5ef6-465e-b28a-df5b005ef2d7	Error: Failed to authenticate token
+20220603	17:52:45	c50fcf41-9dbf-4d58-90af-684cd431ea03	Error: Failed to authenticate token
+20220603	17:59:18	3d8c1a72-733d-4dd2-b788-2eb3951e611a	Error: Failed to authenticate token
+20220603	18:02:41	55cfa459-794c-47ce-a41a-c2b376d974cf	Error: Failed to authenticate token
+20220603	18:03:31	01d00838-4aba-414b-9ebd-7419546bf9bf	Error: Failed to authenticate token
+20220603	18:04:01	739792d5-a132-49d5-9f32-22e3e520b314	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:04:38	05d4445a-c82c-4c3a-936a-57162005e6a1	Error: Failed to authenticate token
+20220603	18:04:38	058290b0-441b-4a88-8b1c-5c5f3e62d6a7	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:05:54	b5d4500d-5c97-44c8-8c47-0b78864d2623	Error: Failed to authenticate token
+20220603	18:06:06	7130d721-55f9-4653-a6fe-6bd834734d6e	Error: Failed to authenticate token
+20220603	18:06:26	95ea4612-5f12-49d3-a955-40ecdd530498	Error: Failed to authenticate token
+20220603	18:06:26	4a3982e8-b4ed-4750-948a-bedc1ab010b3	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:09:13	0ccaf77d-ebcc-4d3c-b5c2-ed60de4041e2	Error: Failed to authenticate token
+20220603	18:09:13	02a48145-e584-4cf9-b456-c36f02f10880	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:09:46	a766eb3f-c857-42d9-8681-df67afafc093	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:10:36	218e7394-5cf7-4bec-8458-e9e5404fa699	Error: Failed to authenticate token
+20220603	18:10:36	9a4aaf9c-6208-4f87-8585-de906cbb1b19	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:11:05	a2eb41cf-f5aa-48a4-8bf8-fe3663f0a1ec	Error: Failed to authenticate token
+20220603	18:11:05	84ae674f-b39e-463f-b86e-60137c5e8770	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:11:30	b4632285-fa14-440e-810a-aa9e351fcd72	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:12:04	74c0cfdb-2d17-4542-b394-a3c8ef79132a	Error: Failed to authenticate token
+20220603	18:12:04	5d77c25d-9986-4316-9c67-88cde70f042e	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:12:13	d7e15fdc-c724-4e14-b690-b3aab8f9d969	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:13:57	73fc6f3a-8c15-4c1f-a90d-3642c60c66f5	Error: Failed to authenticate token
+20220603	18:14:41	eef60c1b-7df6-46b6-bd8e-5b89bcfed41e	Error: Failed to authenticate token
+20220603	18:15:35	505a01ab-efda-4ca4-bd0c-024d29e584d6	Error: Failed to authenticate token
+20220603	18:16:11	b1ffa5c2-eb75-4422-bd0d-e70eeee3ada8	Error: Failed to authenticate token
+20220603	18:17:37	4a403ae2-ad59-47d3-aad5-7dc004711e94	Error: Failed to authenticate token
+20220603	18:20:18	35c9365b-a88a-4afa-88e6-c59213ab7016	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:36:42	8467418e-29db-436f-9213-caac513266f3	Error: Failed to authenticate token
+20220603	18:39:37	6cc2da58-776c-4e5a-aa3f-833dd3af673e	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:40:59	189d2e2a-07e0-40b1-9085-2791f01c9fed	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:48:07	5476f9d4-794e-4ee2-ba9b-f67cc6661ac8	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:49:32	87567682-6e24-4226-b842-0c8fabb800ac	Error: Failed to authenticate token
+20220603	18:49:32	8e958f25-04bd-4a5e-8a70-9d9f204ccca0	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:49:53	41208c19-676d-498c-89e9-0009baeadd98	Error: Failed to authenticate token
+20220603	18:49:53	6ea36ad8-4993-4cb8-85f7-05c6ae205c2a	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:50:54	c14499e8-62e3-4ba8-a22c-7f2366c966e4	Error: Failed to authenticate token
+20220603	18:50:55	97f264a6-aa26-4dd5-81dd-4fd203b224ce	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	18:51:46	0918f4ee-4f17-4586-9e4c-54dd2fe35af7	Error: Failed to authenticate token
+20220603	18:52:05	927cc4c8-ada4-4c7a-94fe-0c1215cc1862	Error: Failed to authenticate token
+20220603	18:53:11	c51f8a09-a1a7-4eab-a144-139dc5891a7e	Error: Failed to authenticate token
+20220603	18:54:02	46cb2a6d-e5ce-4b1b-acba-2537f803dd37	Error: Failed to authenticate token
+20220603	18:54:12	d1a37249-2f0c-453e-a6d2-48aa783c75fc	Error: Failed to authenticate token
+20220603	18:54:36	0b163b0a-a184-47b3-a641-5558c52d6186	Error: Failed to authenticate token
+20220603	18:55:02	e1d9ce1c-5450-434c-be7d-2c3e102b3723	Error: Failed to authenticate token
+20220603	18:55:20	045c83cc-ac56-46e0-b26d-abcdf2f1d593	Error: Failed to authenticate token
+20220603	18:55:31	d6a066eb-d3ac-4ca3-b3d0-dac32e3415d8	Error: Failed to authenticate token
+20220603	18:55:47	ae620a5b-6039-4ed6-83a2-db6beb5ef47a	Error: Failed to authenticate token
+20220603	18:56:47	f319c079-8798-4792-b20e-1551042415dd	Error: Failed to authenticate token
+20220603	18:57:06	66346bca-1dce-48a8-af74-2165bb0e03ff	Error: Failed to authenticate token
+20220603	18:58:29	509db708-2d49-4f4e-9012-53cdf5c800a2	Error: Failed to authenticate token
+20220603	18:59:04	7a33f18d-e5a5-4650-b22c-99948ab94cc6	Error: Failed to authenticate token
+20220603	18:59:23	122e3cb3-e6ff-4a1f-82a1-6827ee807f27	Error: Failed to authenticate token
+20220603	18:59:39	7f212532-f9d2-42f2-b528-451b966843e5	Error: Failed to authenticate token
+20220603	19:00:34	db3c54d0-d67a-44cf-8abe-00bffc301381	Error: Failed to authenticate token
+20220603	19:00:50	cd3ad5a7-bff5-42fc-b7ab-68fd1487e82d	Error: Failed to authenticate token
+20220603	19:01:32	3985ec74-cfe8-4638-96dc-4fb048c00fe9	Error: Failed to authenticate token
+20220603	19:02:34	2efc064f-d115-490f-9395-a58a3303642d	Error: Failed to authenticate token
+20220603	19:02:44	359d50e5-15e8-491c-bfa9-cc968dff2710	Error: Failed to authenticate token
+20220603	19:04:49	f7d7abd6-6ee4-4ba6-846f-4c19e1546dfb	Error: Failed to authenticate token
+20220603	19:09:47	53ebf076-650b-404c-96c4-f9d7526aafc6	Error: Failed to authenticate token
+20220603	19:10:02	93b9de00-34fa-4a73-8a2e-d6cfef674561	Error: Failed to authenticate token
+20220603	19:11:18	1178d1df-e66c-4746-93a2-cb3be82cfbd8	Error: Failed to authenticate token
+20220603	19:12:45	0fb418c5-85e4-48bd-b2b9-d06cbbd53f38	Error: Failed to authenticate token
+20220603	19:21:41	d19bef76-28ee-4544-bf85-5333cb7ef94a	Error: Failed to authenticate token
+20220603	19:23:00	a3063058-dc1f-4c3a-bcc9-9ba1bb300a95	Error: Failed to authenticate token
+20220603	19:23:00	d867e185-84a0-4f06-b64e-3694cacd1f34	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	19:23:37	c0fdf026-f088-48c9-bf83-671c17e078af	Error: Failed to authenticate token
+20220603	19:23:37	1e1a5b03-b949-4cdf-9368-e765d042fa48	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	19:23:58	842ce300-f65b-4f81-a92d-5d692a841db0	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Goal"
+20220603	19:24:15	6096c915-ec48-4ca8-a323-8bbf896dd31c	Error: Failed to authenticate token
+20220603	19:32:26	1f4aced4-a1e7-4ffc-bb44-f511937b4bc9	Error: Failed to authenticate token
+20220603	19:37:14	38bfc1b0-d95e-4a7d-8cb3-2e8e37c70e9e	Error: Failed to authenticate token
+20220603	19:37:51	41a998c0-6f5c-4758-9140-db2c634bc793	Error: Failed to authenticate token
+20220603	19:39:41	41092d16-44d2-463a-b5dc-439f38e09eb7	Error: Failed to authenticate token
+20220603	19:40:21	11d1b0d1-98c9-41e1-a847-d317291ef8e7	Error: Failed to authenticate token
+20220603	19:42:36	f8b406f5-7597-4eb2-8c0d-b94e52595d13	Error: Failed to authenticate token
+20220603	19:47:38	aab3837b-f5db-4c75-83d0-8ae3b4ec7860	Error: Failed to authenticate token
+20220603	19:48:15	d2b6bdac-436d-499b-9ab0-1c924c94229a	Error: Failed to authenticate token
+20220603	19:49:32	028fddb8-60d0-4783-8db7-8472bba8fab5	Error: Failed to authenticate token
+20220603	19:51:01	81ad040d-7dc0-43cf-9337-7f18716264b0	Error: Failed to authenticate token
+20220603	19:51:34	f757d0b7-cdb6-4aeb-a4db-3303413506d3	Error: Failed to authenticate token
+20220603	19:58:19	0d5db098-f341-427b-be46-e7c7afe7ab12	Error: Failed to authenticate token
+20220603	19:58:33	27aa2395-5fea-472a-9b98-a09c835701f7	Error: Failed to authenticate token
+20220603	19:59:08	5919617a-4780-4898-a464-69fe1d02ac49	Error: Failed to authenticate token
+20220603	20:03:52	bbea75dc-eac5-434a-bbc9-6446a16c15cc	Error: Failed to authenticate token
+20220603	20:04:02	e0f9b2ee-4c0a-4c7c-8694-d4da7724187c	Error: Failed to authenticate token
+20220603	20:04:16	7156e8f9-12d8-4f18-b5db-608b81ecaa36	Error: Failed to authenticate token
+20220603	20:05:01	c13a3447-c09e-498e-b769-3559e255a41c	Error: Failed to authenticate token
+20220603	20:06:17	e2b3b6f9-dade-45f2-bb1d-799805ef108b	Error: Failed to authenticate token
+20220603	20:06:32	6ba5a853-1bb5-4eaa-8837-e39cdb29b06e	Error: Failed to authenticate token
+20220603	20:07:40	82ea2a95-b7bf-432c-ad53-c4dad10c33dd	Error: Failed to authenticate token
+20220603	20:08:42	a2cefc26-bd46-45e5-b09a-88928092a605	Error: Failed to authenticate token
+20220603	20:08:42	23c5d967-fdee-4319-b750-c2e0b349b9a0	Error: Failed to authenticate token
+20220603	20:10:09	9ae378e3-7f99-4c23-af3b-c043eaf78614	Error: Failed to authenticate token
+20220603	20:10:21	069c2234-d955-4df7-a821-8564371324f0	Error: Failed to authenticate token
+20220603	20:13:16	64640c1c-223c-4d8b-926a-872fd98aa80e	Error: Failed to authenticate token
+20220603	20:14:09	61896be3-cd8a-4681-b6a6-d5e5739ab1b4	Error: Failed to authenticate token
+20220603	20:16:51	69360691-4151-4e37-b00f-0785e5276019	Error: Failed to authenticate token
+20220603	20:19:46	37179b5d-e4ce-44d0-8f93-539815f0995e	Error: Failed to authenticate token
+20220603	20:19:58	b341fcc0-7086-4b7a-9275-df0d75bb5f22	Error: Failed to authenticate token
+20220603	20:22:25	02470043-7054-468e-a21e-8dc2fa669061	Error: Failed to authenticate token
+20220603	20:22:51	3a58c8ae-659c-4089-aa2c-a89dd0b0d935	Error: Failed to authenticate token
+20220603	20:23:08	2296392f-d0b5-4d1a-8636-464af3b07b55	Error: Failed to authenticate token
+20220603	20:23:22	d698b334-e64c-4b28-9484-f13f2eddcb25	Error: Failed to authenticate token
+20220603	20:27:52	738d43fb-b11b-4077-a44d-5f5426d9de5c	Error: Failed to authenticate token
+20220603	20:27:52	fc5d0b76-8a11-41c5-8fc0-800a7aeb33b6	Error: Please add to the text field
+20220603	20:29:53	80654595-867c-43f1-be06-078d7989aa7b	Error: Failed to authenticate token
+20220603	20:30:26	95a625d9-4822-4711-b409-b22cc5b4362d	Error: Failed to authenticate token
+20220603	20:34:01	ebbd8c76-f80e-484c-b33e-215e1fe87e73	Error: Failed to authenticate token
+20220603	20:35:30	81f3b0fc-f45b-4548-a576-8765e164ffab	Error: Failed to authenticate token
+20220603	20:36:25	5126b002-7627-491b-80a2-cfd19160be08	Error: Failed to authenticate token
+20220603	20:38:35	541dc079-e580-44dc-83e8-ee95ad36efc2	Error: Failed to authenticate token
+20220603	20:40:57	94dc033d-110c-49c6-996c-9061092c8b78	Error: Failed to authenticate token
+20220603	20:41:08	1235b468-c47a-4fbc-aa9f-8c9edf1f4ca3	Error: Failed to authenticate token
+20220603	20:41:21	e852eb3a-86a6-4ea7-914e-8440ef9fa41d	Error: Failed to authenticate token
+20220603	20:43:42	aa3baa47-4f78-498f-a8ad-24fa9bd31a84	Error: Failed to authenticate token
+20220603	20:44:46	e88c529d-1889-4669-9872-5c455078b7bb	Error: Failed to authenticate token
+20220603	20:45:58	b03d7a66-3ed3-4e5e-b6b9-54bad08dc37a	Error: Failed to authenticate token
+20220603	20:47:24	01fb55b0-6d48-4d8d-9f75-daf0bbd4f85a	Error: Failed to authenticate token
+20220603	20:49:50	371d4385-8450-4e3c-8a8a-0189e0bf02f9	Error: Failed to authenticate token
+20220603	20:52:12	a5aca6a6-5420-4151-b541-72d49df9057d	Error: Failed to authenticate token
+20220603	20:52:26	ec0c61a5-78d0-47c9-b518-39e3031058ab	Error: Failed to authenticate token
+20220603	20:53:36	702c3154-4ad1-460e-8397-b4e5788c6e02	Error: Failed to authenticate token
+20220603	20:53:52	10c9c42b-40f6-432d-80c5-9164ec0c8bb5	Error: Failed to authenticate token
+20220603	20:54:29	7f3902d5-1b37-4523-a9d6-0cea4f1a283b	Error: Failed to authenticate token
+20220603	20:58:06	5ade2f6e-d3e0-4778-a289-8d6ccb31bc74	Error: Invalid credentials
+20220603	20:59:13	bcdaa95f-86f3-4073-9d35-7fecc1f80c4d	Error: Invalid credentials
+20220603	20:59:35	5be5da76-4cf6-46e0-bea5-7b19b78cd8e7	Error: Invalid credentials
+20220603	20:59:57	18409c5c-94c4-413d-833f-831b721685e1	Error: Invalid credentials
+20220603	21:01:52	4db03b69-0419-4a38-88ac-d0cc6643b8a5	Error: Failed to authenticate token

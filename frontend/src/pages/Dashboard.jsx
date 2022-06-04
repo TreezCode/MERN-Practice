@@ -1,26 +1,34 @@
+// external imports
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
+// internal imports
 import GoalForm from '../components/GoalForm';
 import GoalItem from '../components/GoalItem';
 import Spinner from '../components/Spinner';
 import { useGetUserQuery } from '../features/auth/authApiSlice';
 import { selectCurrentUser } from '../features/auth/authSlice';
 import { useGetGoalsQuery } from '../features/goals/goalApiSlice';
+import { setGoals } from '../features/goals/goalSlice';
 
 function Dashboard() {
   const navigate = useNavigate();
-  const user = useSelector(selectCurrentUser);
-  const { data: userData, isLoading } = useGetUserQuery(user);
-  const { data: goalData, isFetching, isError, error } = useGetGoalsQuery(user);
+  const dispatch = useDispatch();
+  const currentUser = useSelector(selectCurrentUser);
+  const { data: user, isLoading } = useGetUserQuery(currentUser);
+  const { data: goals, isFetching, isError, error } = useGetGoalsQuery(currentUser);
 
-  // user effects
+  // currentUser effects
   useEffect(() => {
-    if (!user) {
+    if (!currentUser) {
       navigate('/login');
     }
-  }, [user, navigate]);
+  }, [currentUser, navigate]);
+
+  useEffect(() => {
+    dispatch(setGoals(goals))
+  }, [goals, dispatch])
 
   // error effects
   useEffect(() => {
@@ -29,20 +37,21 @@ function Dashboard() {
       !message ? toast.error(error) : toast.error(message);
     }
   }, [isError, error]);
+  
 
   // page content
   const content = (
     <>
       <section className='heading'>
-        <h1>Welcome {userData?.username}</h1>
+        <h1>Welcome {user?.username}</h1>
         <p>Goals Dashboard</p>
       </section>
       <GoalForm />
       <section className='content'>
-        {goalData?.length > 0 ? (
+        {goals?.length > 0 ? (
           <div className='goals'>
-            {goalData.map((goal) => (
-              <GoalItem key={goal._id} goal={goal} />
+            {goals.map((goal) => (
+              <GoalItem key={goal._id} goal={goal} dispatch={dispatch} />
             ))}
           </div>
         ) : (

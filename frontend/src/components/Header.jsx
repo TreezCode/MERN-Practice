@@ -1,8 +1,10 @@
+// external imports
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa';
+// internal imports
 import { selectCurrentUser, signOut } from '../features/auth/authSlice';
 import { useLogoutMutation } from '../features/auth/authApiSlice';
 import Spinner from './Spinner';

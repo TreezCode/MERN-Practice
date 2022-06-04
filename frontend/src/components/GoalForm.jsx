@@ -1,5 +1,7 @@
+// external imports
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+// internal imports
 import { useSetGoalMutation } from '../features/goals/goalApiSlice';
 import Spinner from './Spinner';
 
@@ -15,7 +17,7 @@ function GoalForm() {
       !message ? toast.error(error) : toast.error(message);
     }
     if (isSuccess) {
-      console.log('Goal created!');
+      // console.log('Goal created!');
     }
   }, [isError, isSuccess, error]);
 
@@ -25,7 +27,7 @@ function GoalForm() {
     try {
       const createdGoal = await setGoal({ text }).unwrap();
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
     setText('');
   };
