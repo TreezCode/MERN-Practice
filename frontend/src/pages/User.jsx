@@ -24,7 +24,9 @@ const User = () => {
     <section className='heading'>
       <h1>Welcome {user?.username}</h1>
       <p>{user?.email}</p>
-      <p>{user?.updatedAt}</p>
+      <br />
+      <h4>Updated at: </h4>
+      <p>{new Date(user?.updatedAt).toLocaleString('en-US')}</p>
     </section>
   );
   
