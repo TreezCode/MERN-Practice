@@ -11,13 +11,12 @@ const handleRefreshToken = async (req, res) => {
   const cookies = req.cookies;
   if (!cookies?.jwt) return res.sendStatus(401); // unauthorized
   const refreshToken = cookies.jwt;
-  console.log('Refresh Token Granted ==>'.blue, refreshToken);
+  // console.log('Refresh Token ==>'.blue, refreshToken);
   // Check for user token in database
   const user = await User.findOne({ refreshToken }).select('-password');
-  const userID = user._id.toString();
+  const userID = user?._id.toString();
   if (!user) {
     user.refreshToken = '';
-    await user.save();
     return res.sendStatus(403); // forbidden
   }
   // Verify token
@@ -27,13 +26,15 @@ const handleRefreshToken = async (req, res) => {
       process.env.REFRESH_TOKEN_SECRET,
       (err, decoded) => {
         if (err || userID !== decoded.id) {
-          console.log('Err ==>'.magenta, err);
+          // console.log('Error ==>'.red, err.message);
+          user.refreshToken = '';
           return res.sendStatus(403); // expired or forbidden
         }
         const accessToken = generateAccessToken(decoded.id);
         res.json({ accessToken: accessToken, email: user.email });
       }
     );
+    await user.save();
   } else {
     res.status(401);
     throw new Error('Unauthorized refresh token');
@@ -43,7 +44,7 @@ const handleRefreshToken = async (req, res) => {
 // Generate Access Token
 const generateAccessToken = (id) => {
   return jwt.sign({ id }, process.env.ACCESS_TOKEN_SECRET, {
-    expiresIn: '10s',
+    expiresIn: '15s',
   });
 };
 

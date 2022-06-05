@@ -41,7 +41,7 @@
   --btn-background-reverse: #fff;
   --btn-font-reverse: #000;
   --spinner-background: rgba(0, 0, 0, 0.5);
-  --spinner: #000 transparent #555 transparent;
+  --spinner: rgb(32, 32, 32) transparent #555 transparent;
 }
 
 body {
@@ -127,7 +127,7 @@ a {
   background-color: var(--spinner-background);
 }
 
-.loadingSpinner {
+.loadingSpinnerContainer .loadingSpinner {
   border-color: var(--spinner);
 }
 

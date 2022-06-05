@@ -38,7 +38,7 @@ const registerUser = asyncHandler(async (req, res) => {
     const refreshToken = generateRefreshToken(user.id);
     user.refreshToken = refreshToken;
     const updatedUser = await user.save();
-    console.log('User created ==>'.yellow, updatedUser);
+    // console.log('User created ==>'.yellow, updatedUser);
     // Create secure cookie with refresh token
     res.cookie('jwt', refreshToken, {
       httpOnly: true,
@@ -77,7 +77,7 @@ const loginUser = asyncHandler(async (req, res) => {
     const refreshToken = generateRefreshToken(user.id);
     user.refreshToken = refreshToken;
     const updatedUser = await user.save();
-    console.log('User logged in ==>'.yellow, updatedUser);
+    // console.log('User logged in ==>'.yellow, updatedUser);
     // Create secure cookie with refresh token
     res.cookie('jwt', refreshToken, {
       httpOnly: true,
@@ -120,7 +120,7 @@ const logoutUser = asyncHandler(async (req, res) => {
   // Delete refresh token from database
   user.refreshToken = '';
   const result = await user.save();
-  console.log('User logged out ==>'.yellow, result);
+  // console.log('User logged out ==>'.yellow, result);
   // Clear cookie
   res.clearCookie('jwt', {
     httpOnly: true,

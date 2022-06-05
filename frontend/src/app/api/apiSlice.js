@@ -2,6 +2,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 // internal imports
 import { setCredentials, signOut } from '../../features/auth/authSlice';
+import { reset } from '../../features/goals/goalSlice'
 
 const baseQuery = fetchBaseQuery({
   baseUrl: (process.env.NODE_ENV === 'production'
@@ -30,6 +31,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
       // retry the original query with new access token
       result = await baseQuery(args, api, extraOptions);
     } else {
+      api.dispatch(reset());
       api.dispatch(signOut());
     }
   }

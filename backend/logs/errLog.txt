@@ -2170,3 +2170,134 @@
 20220604	13:57:25	0c4ab79e-437d-4752-8f92-c266733936eb	Error: Invalid credentials
 20220604	13:57:48	18afe5a2-f8e4-4e85-b4ac-79aa7365f8a3	Error: Invalid credentials
 20220604	14:08:03	6e0592cf-4cb9-4213-b733-f9e731a5da87	Error: Invalid credentials
+20220604	20:33:12	1b2c7e54-739c-4688-9f51-ce5f47d0aceb	Error: Failed to authenticate token
+20220604	20:35:06	10cdbc34-87a7-4344-a596-1b5c6a836799	Error: Failed to authenticate token
+20220604	20:36:01	400e6a42-acf6-4642-9db8-719b82ff43ef	Error: Failed to authenticate token
+20220604	20:41:08	ff53829c-3c48-4316-9257-da8907ff33b4	Error: Failed to authenticate token
+20220604	20:41:08	355b5f4c-244a-4933-a66c-dd18fc4a9894	Error: Failed to authenticate token
+20220604	20:41:52	ead12169-ab61-4b31-a2e2-806defb652b7	Error: Failed to authenticate token
+20220604	20:42:11	1d163c44-7357-4099-a566-64036075d17d	Error: Failed to authenticate token
+20220604	20:42:11	6bf9391f-f3a9-4882-a015-601cd4871906	Error: Failed to authenticate token
+20220604	20:43:42	290b3ec0-a3c7-4daf-87cd-1ff38d5b7745	Error: Failed to authenticate token
+20220604	20:43:53	afcefc3f-efca-4c7a-a3d2-d7651bcfbf60	Error: Failed to authenticate token
+20220604	20:43:53	c75fea16-3a56-4278-a8be-74a4b0e89b1d	Error: Failed to authenticate token
+20220604	20:45:05	8dd88a5a-8223-4e44-9dc5-509d708b5183	Error: Failed to authenticate token
+20220604	20:45:17	0a343ffb-01d9-45e9-8064-2a8ab50ba7be	Error: Failed to authenticate token
+20220604	20:45:17	a6739e85-f4a7-4cd0-aef2-b1991e5984af	Error: Failed to authenticate token
+20220604	20:48:35	b7a84155-3616-458c-b96f-93977e6ddeae	Error: Failed to authenticate token
+20220604	20:49:40	5d10ee5b-3fa7-4180-9fc6-b1a886adbea3	Error: Failed to authenticate token
+20220604	20:49:40	28b66499-8c62-461e-baa2-927243acba13	Error: Not authorized, no token
+20220604	20:51:58	0104af4b-be52-444f-8c14-d69864c071cf	Error: Failed to authenticate token
+20220604	20:51:58	b406812f-5b2d-4187-aec6-43418929b940	Error: Not authorized, no token
+20220604	20:53:29	32aeb53a-c221-41cf-95f6-e36a8fa5e748	Error: Failed to authenticate token
+20220604	20:53:52	ac3afada-2c0b-446d-9475-6c54c20ab2b6	Error: Failed to authenticate token
+20220604	20:53:52	7053910f-a02f-4d8f-8c6b-e9333d45a551	Error: Not authorized, no token
+20220604	20:54:06	f0f7f9bc-b6ca-46b6-87cd-9e4fe4858901	Error: Failed to authenticate token
+20220604	20:54:16	6a55f756-6818-485e-a68d-28c8f400a8a3	Error: Failed to authenticate token
+20220604	20:54:16	3575ac9b-27e6-4292-beac-ef39da952ef1	Error: Not authorized, no token
+20220604	20:56:55	c1bcd3b4-6c0f-4471-a620-2b788381672a	Error: Please add all fields.
+20220604	20:57:11	48e0d397-5db4-4e12-8d22-38162c456d46	Error: Failed to authenticate token
+20220604	20:57:22	40cb6e52-14c3-407f-a5e8-67bc01686fd5	Error: Failed to authenticate token
+20220604	20:57:22	e7697d9e-7361-43df-bade-0ca49fccd2ae	Error: Not authorized, no token
+20220604	20:58:50	3a00f189-f515-4f55-96f3-a94dccece358	Error: Failed to authenticate token
+20220604	20:58:50	7cde77dc-0935-40cb-a2f4-fde4040e3694	Error: Failed to authenticate token
+20220604	20:59:00	1735cc47-08ef-4de9-9ea6-0ea2d83e3695	Error: Failed to authenticate token
+20220604	21:01:15	e77a0654-af81-4e0b-8878-637737d31efa	Error: Failed to authenticate token
+20220604	21:01:15	69eb1f47-d9c9-41ba-8841-80f417ac0165	Error: Not authorized, no token
+20220604	21:02:00	e51c18d7-d0d7-408b-8357-5716b096d4dc	Error: User already exists.
+20220604	21:02:13	860cbd57-b7a3-4e9e-a5fb-90ff5bfe92ff	Error: User already exists.
+20220604	21:02:14	ad82983b-1a9e-4239-94c4-f80ee8ecf99f	Error: User already exists.
+20220604	21:02:15	0e716e19-5074-4635-8afb-1a70baa16e2c	Error: User already exists.
+20220604	21:02:16	d311e552-b5fa-4ca2-b51c-66d9f00c5b48	Error: User already exists.
+20220604	21:02:17	003c989c-e5ca-42c9-90c0-9b9ae6f5cd4b	Error: User already exists.
+20220604	21:02:21	d13c8920-96a7-48bb-8989-f3028e5266f4	Error: User already exists.
+20220604	21:02:22	c523a44c-68df-42e7-a449-5019a8dbdf06	Error: User already exists.
+20220604	21:05:28	632cb25c-cb7f-485d-beb2-55ff0307e68c	Error: Failed to authenticate token
+20220604	21:05:39	f165bc88-6afb-4537-8e0c-a4fe9c0321ef	Error: Failed to authenticate token
+20220604	21:05:39	e6c3b8b2-a157-410c-8a65-4b35c2a42cdf	Error: Not authorized, no token
+20220604	21:06:17	24dcac8f-98f4-43d4-9328-96334aa93478	Error: Failed to authenticate token
+20220604	21:06:17	4deb091c-fad7-4cc3-a5fc-ee8ca7e30032	Error: Not authorized, no token
+20220604	21:07:13	7b1745d3-a001-4394-8850-757af82813d5	Error: Failed to authenticate token
+20220604	21:07:13	1d15c578-125e-44e7-98c5-9de6b95ed143	Error: Not authorized, no token
+20220604	21:08:51	f22e99cd-d52d-4bb4-8712-4c2611a363d5	Error: Failed to authenticate token
+20220604	21:08:52	cf5a12f1-3788-4153-8ed2-f8d071e86ae9	Error: Not authorized, no token
+20220604	21:09:26	e9ea6a1d-d266-4e12-9de0-cbdd535c668d	Error: Failed to authenticate token
+20220604	21:09:26	4c89f909-34b5-47f3-8621-6079a09ccbf5	Error: Not authorized, no token
+20220604	21:11:08	127d9fe4-3c06-4c23-a19d-7dbe35a76b01	Error: Failed to authenticate token
+20220604	21:11:18	b49bae1d-395a-408f-8b1a-bdbeda9bdb68	Error: Failed to authenticate token
+20220604	21:11:18	d25ae1c4-1d4c-462a-b942-794e0829eb36	Error: Not authorized, no token
+20220604	21:11:56	7449bef1-2b48-4f7a-b42e-387ab1bce54c	Error: Failed to authenticate token
+20220604	21:12:10	88eec31b-3f62-435d-8f3e-a62f54b8685c	Error: Failed to authenticate token
+20220604	21:12:10	3cd2de80-9fd6-4597-ad81-db255220976b	Error: Not authorized, no token
+20220604	21:13:05	537a840a-2da5-4d23-a7c4-ee9b2cf0e8d4	Error: Failed to authenticate token
+20220604	21:13:16	875d15f6-9cd4-4167-b45c-a17c1819ecd7	Error: Failed to authenticate token
+20220604	21:13:16	97cc73fe-d58d-4f8b-a7e2-48239c304add	Error: Not authorized, no token
+20220604	21:14:38	67145a70-1765-4e10-90a1-80b494d04092	Error: Failed to authenticate token
+20220604	21:14:51	c7d37050-b894-4559-8005-f2acb57bd717	Error: Failed to authenticate token
+20220604	21:15:01	bf04b103-be05-4467-91c0-a86aa24f8381	Error: Failed to authenticate token
+20220604	21:15:01	400dc90f-df53-43b1-a29c-0e54e672a412	Error: Not authorized, no token
+20220604	21:17:14	4c4900a3-ecd8-4906-adfa-9f3b4a1d2b57	Error: Failed to authenticate token
+20220604	21:17:30	7773ab70-fab3-457a-980c-508b188babf1	Error: Failed to authenticate token
+20220604	21:17:45	c1719dbd-279c-45cf-aeca-8105b0d7d0ad	Error: Failed to authenticate token
+20220604	21:17:45	ff091a28-6a70-469c-b1a7-2dfdcec30df4	Error: Failed to authenticate token
+20220604	21:21:56	2bac33f5-f204-493e-8fe5-025752302cf1	Error: Failed to authenticate token
+20220604	21:21:56	85bb35d4-6b12-41db-85a9-d6ae4e8759aa	Error: Failed to authenticate token
+20220604	21:22:25	d48c4ec3-4c24-44a3-8870-ff0a0e2a1f6b	Error: Failed to authenticate token
+20220604	21:22:25	ced853a1-5cbd-42ff-ba9d-24ffac10e5fa	Error: Failed to authenticate token
+20220604	21:22:56	5fc226a2-1046-4702-89c1-e105cad04d27	Error: Failed to authenticate token
+20220604	21:22:56	d6f0e4e2-77fc-40f2-b37e-dd75f76c96d0	Error: Please add to the text field
+20220604	21:25:13	1ce178cd-2f18-4f8a-96d3-9db91ae66093	Error: Failed to authenticate token
+20220604	21:25:28	1b3fcca2-4aab-4f95-95f2-ea071349a38e	Error: Failed to authenticate token
+20220604	21:25:59	9f8be6f3-98c2-451d-8aec-9b63806713d4	Error: Failed to authenticate token
+20220604	21:27:55	b062c9f3-6614-464f-9518-7d44dba81bf4	Error: Failed to authenticate token
+20220604	21:32:34	f8729f6f-1f6f-45ff-8b2b-8c3ce6272e7b	Error: Failed to authenticate token
+20220604	21:32:39	4827d45c-c47c-48e3-b686-c950607c6da8	Error: Please add to the text field
+20220604	21:32:59	4759718a-8003-46e2-9626-59461e34bab7	Error: Failed to authenticate token
+20220604	21:33:58	028266d2-6a8d-40d1-a0f1-7d996b2720ab	Error: Failed to authenticate token
+20220604	21:33:58	be502fcf-853d-41a2-9cb2-8d9f8f0d98de	Error: Please add to the text field
+20220604	21:34:13	b132c587-5048-43e0-bdbb-e761c1dcb6e9	Error: Failed to authenticate token
+20220604	21:34:13	6123c938-d8ad-4d69-b055-d629e0349969	Error: Please add to the text field
+20220604	21:34:13	e6106f7f-e167-42eb-b1af-698f136a9455	Error: Please add to the text field
+20220604	21:34:14	3682b28d-a686-414a-b7a1-d6eefdd97520	Error: Please add to the text field
+20220604	21:34:14	4571dce7-ef45-4b7e-956c-04cad186ffb1	Error: Please add to the text field
+20220604	21:36:20	96b7291d-0f76-4862-91c7-6999dd26ee72	Error: Please add to the text field
+20220604	21:36:43	43ad42b2-cf4a-4898-a61a-d857f065ba7e	Error: Please add to the text field
+20220604	21:36:53	1dd12599-4495-48ba-bfae-145c2465a6b9	Error: Please add to the text field
+20220604	21:36:53	838c6087-3bf0-4a58-8d88-065d71522598	Error: Please add to the text field
+20220604	21:36:54	683159c9-a2ae-4324-bb00-5f887e17d67e	Error: Please add to the text field
+20220604	21:36:55	6e7a9304-db98-4582-b6a0-f6944fdcb3c6	Error: Please add to the text field
+20220604	21:38:08	4d863bf8-7409-4672-b35d-d08458eff2a0	Error: Failed to authenticate token
+20220604	21:38:08	3b5a858f-f631-4cd7-a57b-13116e411188	Error: Please add to the text field
+20220604	21:38:09	a5c07713-99cb-4fe9-9ed0-b8c97821226f	Error: Please add to the text field
+20220604	21:38:48	180e5326-03c3-4361-b8df-aa08073d33cc	Error: Please add to the text field
+20220604	21:38:49	bdac1be4-d46e-4e77-aec5-ffb50fe2f04d	Error: Please add to the text field
+20220604	21:38:52	89fc7b1b-4d60-4acc-b027-6d9ec2dd8628	Error: Please add to the text field
+20220604	21:38:53	da1a9753-bdb6-472e-8b9f-e4def2eb17ec	Error: Please add to the text field
+20220604	21:38:55	2306f0ad-0847-4bb0-920d-86e13373d9d5	Error: Please add to the text field
+20220604	21:38:56	f3c2479c-3188-4d50-8e8d-55c77f39986f	Error: Please add to the text field
+20220604	21:38:56	2c0adf26-e855-48b2-8128-1acf6f02f7dc	Error: Please add to the text field
+20220604	21:38:57	0c21586c-9cd5-481e-9afb-1a85c6fcfcfc	Error: Please add to the text field
+20220604	21:38:58	e675ecf9-c235-44bd-b1f1-0c4876068f62	Error: Please add to the text field
+20220604	21:39:02	bf063622-20cc-406d-a4fb-731ab8b7ff39	Error: Failed to authenticate token
+20220604	21:39:02	f7acf8af-0714-44b0-8dd9-a2d185187737	Error: Please add to the text field
+20220604	21:39:03	9419b0f2-12b9-4903-bdb9-1a1499d21dfe	Error: Please add to the text field
+20220604	21:39:03	a068174a-d3cf-478c-acf5-4c3f6262e8e1	Error: Please add to the text field
+20220604	21:39:04	61aa05e5-ad35-4ead-a4ea-b5c704cad9eb	Error: Please add to the text field
+20220604	21:39:05	d847d74a-92a9-4113-996a-dfa7ee5d6ebe	Error: Please add to the text field
+20220604	21:39:32	40abebb6-06bc-4874-bb0d-428ffbf37897	Error: Failed to authenticate token
+20220604	21:39:32	f469dc3e-fa09-4317-bc20-b4287d3ee1e7	Error: Please add to the text field
+20220604	21:39:33	07b3de2c-7a85-4a5f-a9d5-53f5cf7bffbf	Error: Please add to the text field
+20220604	21:39:33	5283c885-2641-42f0-96bf-7444e98ad46e	Error: Please add to the text field
+20220604	21:39:33	8866a8f6-5e98-4cd0-bba7-71f732fd3b2d	Error: Please add to the text field
+20220604	21:39:34	40525e96-e797-4267-8ee2-3f5498e35867	Error: Please add to the text field
+20220604	21:39:35	e3aa081a-cfdd-4396-8697-1b8b20fadc9b	Error: Please add to the text field
+20220604	21:39:41	699f66dd-024d-4105-aa95-a42857f0f359	Error: Please add to the text field
+20220604	21:39:42	583070c8-4bd4-400b-82cd-be32d10815e0	Error: Please add to the text field
+20220604	21:39:42	a90117db-a398-4402-9014-39367ae54d98	Error: Please add to the text field
+20220604	21:39:43	0fddabae-ef35-467a-abd9-bfacc58d1b11	Error: Please add to the text field
+20220604	21:39:44	78018ed6-955e-4c72-bc31-3485727ebefb	Error: Please add to the text field
+20220604	21:39:50	228cb744-1826-4149-b972-6a88114ab274	Error: Failed to authenticate token
+20220604	21:45:44	781aec7d-9c6d-427d-8d82-d0f57a07094a	Error: Failed to authenticate token
+20220604	21:46:13	65e18aff-170d-4df6-bed0-6936cdcd7f90	Error: Failed to authenticate token
+20220604	21:47:17	b3f5b1a1-df89-44ea-a68a-6e837fd202b1	Error: Failed to authenticate token
+20220604	21:49:49	d0d9734d-1d7d-4530-937d-8f2683e5d406	Error: Failed to authenticate token
