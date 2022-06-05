@@ -85,12 +85,12 @@ textarea::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
-/* .header ul li a:hover {
-  color: #777;
-} */
-
 .header ul li a svg {
   margin-right: 5px;
+}
+
+.logo {
+  font-size: 1.2rem;
 }
 
 .heading {
@@ -258,15 +258,31 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 600px) {
-  .form {
-    width: 90%;
+  .form, 
+  .content {
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 1rem;
+  }
+
+  .header ul,
+  .header .btn {
+    font-size: 0.8rem;
+  }
+
+  .header .btn {
+    padding: 7px 14px
   }
 
   .heading h1 {
     font-size: 2rem;
   }
-
-  .heading p {
+  .heading h4 {
     font-size: 1.5rem;
+  }
+  .heading p {
+    font-size: 1.25rem;
   }
 }
